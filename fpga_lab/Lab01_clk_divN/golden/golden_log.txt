@@ -1,0 +1,5 @@
+##SEC_STUDENT_CAN_SEE
+[CASE 1] checks reset release
+[CASE 2-9] checks divider toggle timing
+[PASS] clk_divN
+##END_STUDENT_CAN_SEE

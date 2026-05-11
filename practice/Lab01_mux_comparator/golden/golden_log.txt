@@ -1,0 +1,5 @@
+##SEC_STUDENT_CAN_SEE
+[CASE 1-2] checks mux select both directions
+[CASE 3-4] checks comparator greater/equal cases
+[PASS] mux_comparator
+##END_STUDENT_CAN_SEE

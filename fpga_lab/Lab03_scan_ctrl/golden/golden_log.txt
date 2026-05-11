@@ -1,0 +1,6 @@
+##SEC_STUDENT_CAN_SEE
+[CASE 1] checks reset release
+[CASE 2-4] checks scan digit rotation
+[CASE 5] checks wraparound
+[PASS] scan_ctrl
+##END_STUDENT_CAN_SEE

@@ -1,0 +1,5 @@
+##SEC_STUDENT_CAN_SEE
+[CASE 1] checks zero input
+[CASE 2-9] checks priority branches and multi-bit inputs
+[PASS] priority_encoder
+##END_STUDENT_CAN_SEE

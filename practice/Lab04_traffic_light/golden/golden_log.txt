@@ -1,0 +1,7 @@
+##SEC_STUDENT_CAN_SEE
+[CASE 1-5] checks green phase
+[CASE 6-7] checks yellow phase
+[CASE 8-12] checks red phase
+[CASE 13] checks wraparound
+[PASS] traffic_light
+##END_STUDENT_CAN_SEE

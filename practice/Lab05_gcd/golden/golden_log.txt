@@ -1,0 +1,5 @@
+##SEC_STUDENT_CAN_SEE
+[CASE 1-3] checks general GCD inputs
+[CASE 4-5] checks zero-input corner cases
+[PASS] gcd
+##END_STUDENT_CAN_SEE

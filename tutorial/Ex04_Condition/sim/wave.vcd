@@ -1,0 +1,121 @@
+$date
+	Mon May 11 16:37:38 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_ex04_condition $end
+$var wire 1 ! value_in_range $end
+$var wire 8 " smaller [7:0] $end
+$var wire 8 # larger [7:0] $end
+$var wire 8 $ clamped [7:0] $end
+$var wire 1 % a_gt_b $end
+$var wire 1 & a_eq_b $end
+$var reg 8 ' a [7:0] $end
+$var reg 8 ( b [7:0] $end
+$var reg 8 ) high [7:0] $end
+$var reg 8 * low [7:0] $end
+$var reg 8 + value [7:0] $end
+$var integer 32 , errors [31:0] $end
+$var integer 32 - log_fd [31:0] $end
+$var integer 32 . pattern [31:0] $end
+$var integer 32 / result_fd [31:0] $end
+$scope module dut $end
+$var wire 8 0 a [7:0] $end
+$var wire 8 1 b [7:0] $end
+$var wire 8 2 high [7:0] $end
+$var wire 8 3 low [7:0] $end
+$var wire 8 4 value [7:0] $end
+$var wire 1 ! value_in_range $end
+$var wire 8 5 smaller [7:0] $end
+$var wire 8 6 larger [7:0] $end
+$var wire 1 % a_gt_b $end
+$var wire 1 & a_eq_b $end
+$var reg 8 7 clamped [7:0] $end
+$upscope $end
+$scope task check $end
+$var reg 8 8 exp_clamped [7:0] $end
+$var reg 8 9 ia [7:0] $end
+$var reg 8 : ib [7:0] $end
+$var reg 8 ; ihigh [7:0] $end
+$var reg 8 < ilow [7:0] $end
+$var reg 8 = ivalue [7:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b101 =
+b10 <
+b1000 ;
+b11 :
+b1001 9
+bx 8
+b101 7
+b1001 6
+b11 5
+b101 4
+b10 3
+b1000 2
+b11 1
+b1001 0
+b10000000000000000000000000000100 /
+b1 .
+b10000000000000000000000000000011 -
+b0 ,
+b101 +
+b10 *
+b1000 )
+b11 (
+b1001 '
+0&
+1%
+b101 $
+b1001 #
+b11 "
+1!
+$end
+#1000
+b10 $
+b10 7
+0!
+b1 +
+b1 4
+b1001 (
+b1001 1
+0%
+0&
+b11 '
+b11 0
+b10 .
+b1 =
+b1001 :
+b11 9
+b101 8
+#2000
+b1000 $
+b1000 7
+b111 #
+b111 6
+b111 "
+b111 5
+b1001 +
+b1001 4
+1&
+b111 (
+b111 1
+b111 '
+b111 0
+b11 .
+b1001 =
+b111 :
+b111 9
+b10 8
+#3000
+b1000 8

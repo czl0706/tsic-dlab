@@ -1,0 +1,303 @@
+$date
+	Mon May 11 15:57:59 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_alu_comp $end
+$var wire 16 ! result [15:0] $end
+$var wire 8 " reg3 [7:0] $end
+$var wire 8 # reg2 [7:0] $end
+$var wire 8 $ reg1 [7:0] $end
+$var wire 8 % reg0 [7:0] $end
+$var reg 1 & clk $end
+$var reg 2 ' op [1:0] $end
+$var reg 1 ( rst_n $end
+$var reg 2 ) src_a [1:0] $end
+$var reg 2 * src_b [1:0] $end
+$var reg 2 + waddr [1:0] $end
+$var reg 8 , wdata [7:0] $end
+$var reg 1 - wen $end
+$var integer 32 . errors [31:0] $end
+$var integer 32 / log_fd [31:0] $end
+$var integer 32 0 pattern [31:0] $end
+$var integer 32 1 result_fd [31:0] $end
+$scope function reg_value $end
+$var reg 2 2 sel [1:0] $end
+$upscope $end
+$scope module dut $end
+$var wire 1 & clk $end
+$var wire 2 3 op [1:0] $end
+$var wire 8 4 reg0 [7:0] $end
+$var wire 8 5 reg1 [7:0] $end
+$var wire 8 6 reg2 [7:0] $end
+$var wire 8 7 reg3 [7:0] $end
+$var wire 1 ( rst_n $end
+$var wire 2 8 src_a [1:0] $end
+$var wire 2 9 src_b [1:0] $end
+$var wire 2 : waddr [1:0] $end
+$var wire 8 ; wdata [7:0] $end
+$var wire 1 - wen $end
+$var parameter 2 < OP_ADD $end
+$var parameter 2 = OP_DIV2 $end
+$var parameter 2 > OP_MUL $end
+$var parameter 2 ? OP_SUB $end
+$var reg 8 @ a_val [7:0] $end
+$var reg 8 A b_val [7:0] $end
+$var reg 16 B result [15:0] $end
+$var integer 32 C i [31:0] $end
+$upscope $end
+$scope task check_alu $end
+$var reg 2 D a_sel [1:0] $end
+$var reg 8 E a_value [7:0] $end
+$var reg 2 F b_sel [1:0] $end
+$var reg 8 G b_value [7:0] $end
+$var reg 16 H expected [15:0] $end
+$var reg 128 I name [127:0] $end
+$var reg 2 J op_sel [1:0] $end
+$upscope $end
+$scope task write_reg $end
+$var reg 2 K addr [1:0] $end
+$var reg 8 L data [7:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1 ?
+b10 >
+b11 =
+b0 <
+$end
+#0
+$dumpvars
+bx L
+bx K
+bx J
+bx I
+bx H
+bx G
+bx F
+bx E
+bx D
+b100 C
+b0 B
+b0 A
+b0 @
+b0 ;
+b0 :
+b0 9
+b0 8
+b0 7
+b0 6
+b0 5
+b0 4
+b0 3
+bx 2
+b10000000000000000000000000000100 1
+b0 0
+b10000000000000000000000000000011 /
+b0 .
+0-
+b0 ,
+b0 +
+b0 *
+b0 )
+0(
+b0 '
+0&
+b0 %
+b0 $
+b0 #
+b0 "
+b0 !
+$end
+#5000
+b100 C
+1&
+#10000
+0&
+#15000
+b100 C
+1&
+#20000
+1(
+0&
+#21000
+b10100 L
+b0 K
+#25000
+1&
+#30000
+1-
+b10100 ,
+b10100 ;
+0&
+#35000
+b101000 !
+b101000 B
+b10100 A
+b10100 @
+b10100 %
+b10100 4
+1&
+#40000
+b0 ,
+b0 ;
+0-
+0&
+#41000
+b111 L
+b1 K
+#45000
+1&
+#50000
+1-
+b111 ,
+b111 ;
+b1 +
+b1 :
+0&
+#55000
+b111 $
+b111 5
+1&
+#60000
+b0 +
+b0 :
+b0 ,
+b0 ;
+0-
+0&
+#61000
+b11 L
+b10 K
+#65000
+1&
+#70000
+1-
+b11 ,
+b11 ;
+b10 +
+b10 :
+0&
+#75000
+b11 #
+b11 6
+1&
+#80000
+b0 +
+b0 :
+b0 ,
+b0 ;
+0-
+0&
+#81000
+b1100 L
+b11 K
+#85000
+1&
+#90000
+1-
+b1100 ,
+b1100 ;
+b11 +
+b11 :
+0&
+#95000
+b1100 "
+b1100 7
+1&
+#100000
+b0 +
+b0 :
+b0 ,
+b0 ;
+0-
+0&
+#101000
+b11011 H
+b0 J
+b1 F
+b0 D
+b11000010110010001100100 I
+b1 0
+#105000
+1&
+#110000
+b11011 !
+b11011 B
+b111 A
+b10 0
+b111 G
+b10100 E
+b1 2
+b1 *
+b1 9
+0&
+#111000
+b1101 H
+b1 J
+b11100110111010101100010 I
+#115000
+1&
+#120000
+b1101 !
+b1101 B
+b11 0
+b1 2
+b1 '
+b1 3
+0&
+#121000
+b10101 H
+b10 J
+b10 F
+b1 D
+b11011010111010101101100 I
+#125000
+1&
+#130000
+b10101 !
+b10101 B
+b11 A
+b111 @
+b100 0
+b11 G
+b10 2
+b111 E
+b10 '
+b10 3
+b10 *
+b10 9
+b1 )
+b1 8
+0&
+#131000
+b110 H
+b11 J
+b0 F
+b11 D
+b1100100011010010111011000110010 I
+#135000
+1&
+#140000
+b110 !
+b110 B
+b10100 A
+b1100 @
+b101 0
+b10100 G
+b1100 E
+b0 2
+b11 '
+b11 3
+b0 *
+b0 9
+b11 )
+b11 8
+0&
+#141000

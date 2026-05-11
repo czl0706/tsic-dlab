@@ -1,0 +1,110 @@
+$date
+	Mon May 11 09:39:55 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_scan_ctrl $end
+$var wire 2 ! scan_sel [1:0] $end
+$var wire 4 " an [3:0] $end
+$var reg 1 # clk $end
+$var reg 1 $ rst $end
+$var integer 32 % errors [31:0] $end
+$var integer 32 & log_fd [31:0] $end
+$var integer 32 ' pattern [31:0] $end
+$var integer 32 ( result_fd [31:0] $end
+$scope module dut $end
+$var wire 1 # clk $end
+$var wire 1 $ rst $end
+$var reg 4 ) an [3:0] $end
+$var reg 2 * scan_sel [1:0] $end
+$upscope $end
+$scope task check $end
+$var reg 4 + exp_an [3:0] $end
+$var reg 2 , exp_sel [1:0] $end
+$var reg 256 - name [255:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+bx -
+bx ,
+bx +
+b0 *
+b1110 )
+b10000000000000000000000000000100 (
+b0 '
+b10000000000000000000000000000011 &
+b0 %
+1$
+0#
+b1110 "
+b0 !
+$end
+#5000
+1#
+#10000
+0#
+#15000
+1#
+#20000
+b1 '
+b1110 +
+b0 ,
+b1110010011001010111001101100101011101000010000001110010011001010110110001100101011000010111001101100101 -
+0$
+0#
+#25000
+b1101 "
+b1101 )
+b1 !
+b1 *
+b10 '
+b1101 +
+b1 ,
+b11100110110001101100001011011100010000001100100011010010110011101101001011101000010000000110001 -
+1#
+#30000
+0#
+#35000
+b1011 "
+b1011 )
+b10 !
+b10 *
+b11 '
+b1011 +
+b10 ,
+b11100110110001101100001011011100010000001100100011010010110011101101001011101000010000000110010 -
+1#
+#40000
+0#
+#45000
+b111 "
+b111 )
+b11 !
+b11 *
+b100 '
+b111 +
+b11 ,
+b11100110110001101100001011011100010000001100100011010010110011101101001011101000010000000110011 -
+1#
+#50000
+0#
+#55000
+b1110 "
+b1110 )
+b0 !
+b0 *
+b101 '
+b1110 +
+b0 ,
+b11101110111001001100001011100000010000001110100011011110010000001100100011010010110011101101001011101000010000000110000 -
+1#
+#56000

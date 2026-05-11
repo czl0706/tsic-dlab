@@ -1,0 +1,8 @@
+##SEC_STUDENT_CAN_SEE
+[CASE 1] checks idle low
+[CASE 2] checks first rising edge pulse
+[CASE 3] checks no repeated pulse while held high
+[CASE 4] checks return low
+[CASE 5] checks second rising edge pulse
+[PASS] pulse_detector
+##END_STUDENT_CAN_SEE

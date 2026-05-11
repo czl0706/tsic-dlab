@@ -1,0 +1,274 @@
+$date
+	Mon May 11 16:48:15 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_ex06_advanced_seq $end
+$var wire 1 ! vend $end
+$var wire 8 " char [7:0] $end
+$var wire 1 # change_5 $end
+$var wire 4 $ amount [3:0] $end
+$var reg 1 % clk $end
+$var reg 1 & coin_10 $end
+$var reg 1 ' coin_5 $end
+$var reg 1 ( rst_n $end
+$var integer 32 ) errors [31:0] $end
+$var integer 32 * log_fd [31:0] $end
+$var integer 32 + pattern [31:0] $end
+$var integer 32 , result_fd [31:0] $end
+$scope module u_hello $end
+$var wire 1 % clk $end
+$var wire 1 ( rst_n $end
+$var parameter 32 - MSG_LEN $end
+$var reg 8 . char [7:0] $end
+$var reg 4 / index [3:0] $end
+$upscope $end
+$scope module u_vending $end
+$var wire 1 % clk $end
+$var wire 1 & coin_10 $end
+$var wire 1 ' coin_5 $end
+$var wire 1 ( rst_n $end
+$var parameter 2 0 S0 $end
+$var parameter 2 1 S10 $end
+$var parameter 2 2 S5 $end
+$var reg 2 3 S [1:0] $end
+$var reg 2 4 S_nxt [1:0] $end
+$var reg 4 5 amount [3:0] $end
+$var reg 4 6 amount_nxt [3:0] $end
+$var reg 1 # change_5 $end
+$var reg 1 7 change_5_nxt $end
+$var reg 1 ! vend $end
+$var reg 1 8 vend_nxt $end
+$upscope $end
+$scope task check_hello $end
+$var reg 8 9 expected [7:0] $end
+$var reg 128 : name [127:0] $end
+$upscope $end
+$scope task check_vending $end
+$var reg 4 ; exp_amount [3:0] $end
+$var reg 1 < exp_change_5 $end
+$var reg 1 = exp_vend $end
+$var reg 192 > name [191:0] $end
+$upscope $end
+$scope task set_coins $end
+$var reg 1 ? c10 $end
+$var reg 1 @ c5 $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1 2
+b10 1
+b0 0
+b1110 -
+$end
+#0
+$dumpvars
+x@
+x?
+bx >
+x=
+x<
+bx ;
+bx :
+bx 9
+08
+07
+b0 6
+b0 5
+b0 4
+b0 3
+b0 /
+b1001000 .
+b10000000000000000000000000000100 ,
+b0 +
+b10000000000000000000000000000011 *
+b0 )
+0(
+0'
+0&
+0%
+b0 $
+0#
+b1001000 "
+0!
+$end
+#5000
+1%
+#10000
+0%
+#15000
+1%
+#20000
+1(
+0%
+#21000
+b1 +
+b1001000 9
+b1001000 :
+#25000
+b1100101 "
+b1100101 .
+b1 /
+b10 +
+b1100101 9
+b1100101 :
+1%
+#30000
+0%
+#35000
+b1101100 "
+b1101100 .
+b10 /
+b11 +
+b1101100 9
+b1101100 :
+1%
+#40000
+0%
+#45000
+b11 /
+b100 +
+1%
+#50000
+0%
+#55000
+b1101111 "
+b1101111 .
+b100 /
+b101 +
+b1101111 9
+b1101111 :
+1%
+#56000
+0?
+1@
+#60000
+b101 6
+b1 4
+1'
+0%
+#65000
+b1010 6
+b10 4
+b100000 "
+b100000 .
+b101 $
+b101 5
+b1 3
+b101 /
+b110 +
+b101 ;
+0<
+0=
+b110100101101110011100110110010101110010011101000010000000110101 >
+1%
+#66000
+1?
+0@
+#70000
+b0 6
+18
+b0 4
+1&
+0'
+0%
+#75000
+b1010111 "
+b1010111 .
+b1010 6
+b10 4
+08
+b110 /
+b0 $
+b0 5
+1!
+b0 3
+b111 +
+b0 ;
+1=
+b11010100100000011100000110110001110101011100110010000000110001001100000010000001110110011001010110111001100100 >
+1%
+#76000
+0?
+#80000
+b0 6
+b0 4
+0&
+0%
+#85000
+b1101111 "
+b1101111 .
+0!
+b111 /
+b1000 +
+0=
+b11010010110010001101100011001010010000001100001011001100111010001100101011100100010000001110110011001010110111001100100 >
+1%
+#86000
+1?
+#90000
+b1010 6
+b10 4
+1&
+0%
+#95000
+b1110010 "
+b1110010 .
+b0 6
+b0 4
+17
+18
+b1000 /
+b1010 $
+b1010 5
+b10 3
+b1001 +
+b1010 ;
+b11010010110111001110011011001010111001001110100001000000011000100110000 >
+1%
+#100000
+0%
+#105000
+b1010 6
+b10 4
+07
+08
+b1101100 "
+b1101100 .
+b0 $
+b0 5
+1#
+1!
+b0 3
+b1001 /
+b1010 +
+b0 ;
+1<
+1=
+b110001001100000010000001110000011011000111010101110011001000000011000100110000001000000111011001100101011011100110010000100000011000110110100001100001011011100110011101100101 >
+1%
+#106000
+0?
+#110000
+b0 6
+b0 4
+0&
+0%
+#115000
+b1100100 "
+b1100100 .
+b1010 /
+0#
+0!
+b1011 +
+0<
+0=
+b1101001011001000110110001100101001000000110011001101001011011100110000101101100 >
+1%
+#116000

@@ -1,0 +1,64 @@
+{
+  "extensionVersion": "1.5.2",
+  "fileName": "f:\\data\\@School\\114-2\\TSIC\\extension\\fixtures\\fpga_lab\\Lab03_scan_ctrl\\golden\\golden_wave.vcd",
+  "markerTime": null,
+  "altMarkerTime": null,
+  "displayTimeUnit": "ps",
+  "selectedSignal": null,
+  "zoomRatio": 0.019085361809378525,
+  "scrollLeft": 0,
+  "displayedSignals": [
+    {
+      "dataType": "netlist-variable",
+      "netlistId": 10,
+      "name": "tb_scan_ctrl.dut.an",
+      "numberFormat": "binary",
+      "colorIndex": 0,
+      "rowHeight": 1,
+      "verticalScale": 1,
+      "nameType": "fullPath",
+      "customName": "an",
+      "renderType": "multiBit",
+      "valueLinkCommand": ""
+    },
+    {
+      "dataType": "netlist-variable",
+      "netlistId": 8,
+      "name": "tb_scan_ctrl.dut.clk",
+      "numberFormat": "binary",
+      "colorIndex": 0,
+      "rowHeight": 1,
+      "verticalScale": 1,
+      "nameType": "fullPath",
+      "customName": "clk",
+      "renderType": "binary",
+      "valueLinkCommand": ""
+    },
+    {
+      "dataType": "netlist-variable",
+      "netlistId": 9,
+      "name": "tb_scan_ctrl.dut.rst",
+      "numberFormat": "binary",
+      "colorIndex": 0,
+      "rowHeight": 1,
+      "verticalScale": 1,
+      "nameType": "fullPath",
+      "customName": "rst",
+      "renderType": "binary",
+      "valueLinkCommand": ""
+    },
+    {
+      "dataType": "netlist-variable",
+      "netlistId": 11,
+      "name": "tb_scan_ctrl.dut.scan_sel",
+      "numberFormat": "hexadecimal",
+      "colorIndex": 0,
+      "rowHeight": 1,
+      "verticalScale": 1,
+      "nameType": "fullPath",
+      "customName": "scan_sel",
+      "renderType": "multiBit",
+      "valueLinkCommand": ""
+    }
+  ]
+}

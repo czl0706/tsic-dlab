@@ -1,0 +1,8 @@
+##SEC_STUDENT_CAN_SEE
+[CASE 1-3] checks synchronous write/readback on multiple addresses
+[CASE 4] checks overwrite on the same address
+[CASE 5] checks same-address read/write returns old data first
+[CASE 6] checks different-address read/write does not disturb read data
+[CASE 7] checks first and last valid depth addresses
+[PASS] blockram
+##END_STUDENT_CAN_SEE

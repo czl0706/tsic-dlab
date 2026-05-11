@@ -1,0 +1,175 @@
+$date
+	Mon May 11 16:36:20 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_ex01_logic $end
+$var wire 1 ! o_xor $end
+$var wire 4 " o_reduced_or [3:0] $end
+$var wire 4 # o_reduced_and [3:0] $end
+$var wire 4 $ o_or_v [3:0] $end
+$var wire 1 % o_or $end
+$var wire 4 & o_not_v3 [3:0] $end
+$var wire 1 ' o_nand $end
+$var wire 4 ( o_and_v [3:0] $end
+$var wire 1 ) o_and $end
+$var wire 1 * not_a $end
+$var wire 4 + inv_v1 [3:0] $end
+$var reg 1 , a $end
+$var reg 1 - b $end
+$var reg 4 . in_v1 [3:0] $end
+$var reg 4 / in_v2 [3:0] $end
+$var reg 4 0 in_v3 [3:0] $end
+$var integer 32 1 errors [31:0] $end
+$var integer 32 2 log_fd [31:0] $end
+$var integer 32 3 pattern [31:0] $end
+$var integer 32 4 result_fd [31:0] $end
+$scope module dut $end
+$var wire 1 , a $end
+$var wire 1 - b $end
+$var wire 4 5 in_v1 [3:0] $end
+$var wire 4 6 in_v2 [3:0] $end
+$var wire 4 7 in_v3 [3:0] $end
+$var reg 4 8 inv_v1 [3:0] $end
+$var reg 1 * not_a $end
+$var reg 1 ) o_and $end
+$var reg 4 9 o_and_v [3:0] $end
+$var reg 1 ' o_nand $end
+$var reg 4 : o_not_v3 [3:0] $end
+$var reg 1 % o_or $end
+$var reg 4 ; o_or_v [3:0] $end
+$var reg 4 < o_reduced_and [3:0] $end
+$var reg 4 = o_reduced_or [3:0] $end
+$var reg 1 ! o_xor $end
+$upscope $end
+$scope task check $end
+$var reg 1 > ia $end
+$var reg 1 ? ib $end
+$var reg 4 @ v1 [3:0] $end
+$var reg 4 A v2 [3:0] $end
+$var reg 4 B v3 [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 B
+b1111 A
+b0 @
+0?
+0>
+b0 =
+b0 <
+b1111 ;
+b1111 :
+b0 9
+b1111 8
+b0 7
+b1111 6
+b0 5
+b10000000000000000000000000000100 4
+b1 3
+b10000000000000000000000000000011 2
+b0 1
+b0 0
+b1111 /
+b0 .
+0-
+0,
+b1111 +
+1*
+0)
+b0 (
+1'
+b1111 &
+0%
+b1111 $
+b0 #
+b0 "
+0!
+$end
+#1000
+b1 "
+b1 =
+b1 #
+b1 <
+b0 &
+b0 :
+b1110 $
+b1110 ;
+b1000 (
+b1000 9
+b101 +
+b101 8
+1!
+1%
+b1111 0
+b1111 7
+b1100 /
+b1100 6
+b1010 .
+b1010 5
+1-
+b10 3
+b1111 B
+b1100 A
+b1010 @
+1?
+#2000
+b0 #
+b0 <
+b111 &
+b111 :
+b111 $
+b111 ;
+b1 (
+b1 9
+b1010 +
+b1010 8
+0*
+b1000 0
+b1000 7
+b11 /
+b11 6
+b101 .
+b101 5
+0-
+1,
+b11 3
+b1000 B
+b11 A
+b101 @
+0?
+1>
+#3000
+b1001 &
+b1001 :
+b1111 $
+b1111 ;
+b0 (
+b0 9
+b0 +
+b0 8
+0'
+0!
+1)
+b110 0
+b110 7
+b0 /
+b0 6
+b1111 .
+b1111 5
+1-
+b100 3
+b110 B
+b0 A
+b1111 @
+1?
+#4000

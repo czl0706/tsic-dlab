@@ -1,0 +1,126 @@
+$date
+	Mon May 11 16:36:20 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_ex00_basics $end
+$var wire 2 ! bresp [1:0] $end
+$var wire 8 " const_15 [7:0] $end
+$var wire 8 # const_63 [7:0] $end
+$var wire 16 $ out_s16 [15:0] $end
+$var wire 8 % out_reg [7:0] $end
+$var wire 8 & out_ass [7:0] $end
+$var wire 4 ' lo_nibs [3:0] $end
+$var wire 8 ( in_sign [7:0] $end
+$var wire 4 ) hi_nibs [3:0] $end
+$var reg 8 * in [7:0] $end
+$var integer 32 + errors [31:0] $end
+$var integer 32 , log_fd [31:0] $end
+$var integer 32 - pattern [31:0] $end
+$var integer 32 . result_fd [31:0] $end
+$scope module dut $end
+$var wire 2 / bresp [1:0] $end
+$var wire 8 0 const_15 [7:0] $end
+$var wire 8 1 const_63 [7:0] $end
+$var wire 8 2 in [7:0] $end
+$var wire 8 3 in_sign [7:0] $end
+$var wire 8 4 out_ass [7:0] $end
+$var wire 16 5 out_s16 [15:0] $end
+$var wire 4 6 lo_nibs [3:0] $end
+$var wire 4 7 hi_nibs [3:0] $end
+$var parameter 2 8 BRESP_DECERR $end
+$var reg 8 9 out_reg [7:0] $end
+$upscope $end
+$scope task check $end
+$var reg 8 : value [7:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b11 8
+$end
+#0
+$dumpvars
+b0 :
+b0 9
+b0 7
+b0 6
+b0 5
+b0 4
+b0 3
+b0 2
+b111111 1
+b1111 0
+b11 /
+b10000000000000000000000000000100 .
+b1 -
+b10000000000000000000000000000011 ,
+b0 +
+b0 *
+b0 )
+b0 (
+b0 '
+b0 &
+b0 %
+b0 $
+b111111 #
+b1111 "
+b11 !
+$end
+#1000
+b111100 %
+b111100 9
+b1100 '
+b1100 6
+b11 )
+b11 7
+b111100 &
+b111100 4
+b111100 (
+b111100 3
+b111100 $
+b111100 5
+b111100 *
+b111100 2
+b10 -
+b111100 :
+#2000
+b10000000 %
+b10000000 9
+b0 '
+b0 6
+b1000 )
+b1000 7
+b10000000 &
+b10000000 4
+b10000000 (
+b10000000 3
+b1111111110000000 $
+b1111111110000000 5
+b10000000 *
+b10000000 2
+b11 -
+b10000000 :
+#3000
+b11111111 %
+b11111111 9
+b1111 '
+b1111 6
+b1111 )
+b1111 7
+b11111111 &
+b11111111 4
+b11111111 (
+b11111111 3
+b1111111111111111 $
+b1111111111111111 5
+b11111111 *
+b11111111 2
+b100 -
+b11111111 :
+#4000

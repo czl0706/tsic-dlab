@@ -1,0 +1,55 @@
+{
+  "extensionVersion": "1.5.2",
+  "fileName": "f:\\data\\@School\\114-2\\TSIC\\extension\\fixtures\\tutorial\\Ex03_Decoder\\sim\\wave.vcd",
+  "markerTime": null,
+  "altMarkerTime": null,
+  "displayTimeUnit": "ps",
+  "selectedSignal": {
+    "name": "tb_ex03_decoder.dut.onehot_shift",
+    "msb": 3,
+    "lsb": 0
+  },
+  "zoomRatio": 0.24666666666666667,
+  "scrollLeft": 0,
+  "displayedSignals": [
+    {
+      "dataType": "netlist-variable",
+      "netlistId": 7,
+      "name": "tb_ex03_decoder.dut.sel",
+      "numberFormat": "hexadecimal",
+      "colorIndex": 0,
+      "rowHeight": 1,
+      "verticalScale": 1,
+      "nameType": "fullPath",
+      "customName": "sel",
+      "renderType": "multiBit",
+      "valueLinkCommand": ""
+    },
+    {
+      "dataType": "netlist-variable",
+      "netlistId": 9,
+      "name": "tb_ex03_decoder.dut.onehot_case",
+      "numberFormat": "hexadecimal",
+      "colorIndex": 0,
+      "rowHeight": 1,
+      "verticalScale": 1,
+      "nameType": "fullPath",
+      "customName": "onehot_case",
+      "renderType": "multiBit",
+      "valueLinkCommand": ""
+    },
+    {
+      "dataType": "netlist-variable",
+      "netlistId": 8,
+      "name": "tb_ex03_decoder.dut.onehot_shift",
+      "numberFormat": "hexadecimal",
+      "colorIndex": 0,
+      "rowHeight": 1,
+      "verticalScale": 1,
+      "nameType": "fullPath",
+      "customName": "onehot_shift",
+      "renderType": "multiBit",
+      "valueLinkCommand": ""
+    }
+  ]
+}

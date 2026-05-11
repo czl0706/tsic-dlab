@@ -1,0 +1,115 @@
+$date
+	Mon May 11 15:57:58 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_mux_comparator $end
+$var wire 8 ! smaller [7:0] $end
+$var wire 8 " mux_out [7:0] $end
+$var wire 8 # larger [7:0] $end
+$var reg 8 $ a [7:0] $end
+$var reg 8 % b [7:0] $end
+$var reg 1 & sel $end
+$var integer 32 ' errors [31:0] $end
+$var integer 32 ( log_fd [31:0] $end
+$var integer 32 ) pattern [31:0] $end
+$var integer 32 * result_fd [31:0] $end
+$scope module dut $end
+$var wire 8 + a [7:0] $end
+$var wire 8 , b [7:0] $end
+$var wire 1 & sel $end
+$var wire 8 - smaller [7:0] $end
+$var wire 8 . mux_out [7:0] $end
+$var wire 8 / larger [7:0] $end
+$var wire 1 0 a_gt_b $end
+$upscope $end
+$scope task check $end
+$var reg 8 1 exp_larger [7:0] $end
+$var reg 8 2 exp_mux [7:0] $end
+$var reg 8 3 exp_smaller [7:0] $end
+$var reg 8 4 va [7:0] $end
+$var reg 8 5 vb [7:0] $end
+$var reg 1 6 vsel $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+06
+b1001 5
+b11 4
+b11 3
+b11 2
+b1001 1
+00
+b1001 /
+b11 .
+b11 -
+b1001 ,
+b11 +
+b10000000000000000000000000000100 *
+b1 )
+b10000000000000000000000000000011 (
+b0 '
+0&
+b1001 %
+b11 $
+b1001 #
+b11 "
+b11 !
+$end
+#1000
+b1001 "
+b1001 .
+b10 )
+1&
+b1001 2
+16
+#2000
+b100 !
+b100 -
+b1100 #
+b1100 /
+b1100 "
+b1100 .
+b11 )
+0&
+b100 %
+b100 ,
+10
+b1100 $
+b1100 +
+b100 3
+b1100 1
+b1100 2
+06
+b100 5
+b1100 4
+#3000
+b111 !
+b111 -
+b111 #
+b111 /
+b111 "
+b111 .
+b100 )
+1&
+00
+b111 %
+b111 ,
+b111 $
+b111 +
+b111 3
+b111 1
+b111 2
+16
+b111 5
+b111 4
+#4000

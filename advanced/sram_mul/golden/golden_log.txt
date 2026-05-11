@@ -1,0 +1,5 @@
+##SEC_STUDENT_CAN_SEE
+[CASE 1] checks start/done handshake
+[CASE 2] checks all output matrix entries, including signed values
+[PASS] sram_mul
+##END_STUDENT_CAN_SEE

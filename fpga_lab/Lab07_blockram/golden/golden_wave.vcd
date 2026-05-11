@@ -1,0 +1,348 @@
+$date
+	Mon May 11 15:51:23 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_blockram $end
+$var wire 12 ! rdata [11:0] $end
+$var reg 1 " clk $end
+$var reg 4 # raddr [3:0] $end
+$var reg 4 $ waddr [3:0] $end
+$var reg 12 % wdata [11:0] $end
+$var reg 1 & we $end
+$var integer 32 ' errors [31:0] $end
+$var integer 32 ( log_fd [31:0] $end
+$var integer 32 ) pattern [31:0] $end
+$var integer 32 * result_fd [31:0] $end
+$scope module dut $end
+$var wire 1 " clk $end
+$var wire 4 + raddr [3:0] $end
+$var wire 4 , waddr [3:0] $end
+$var wire 12 - wdata [11:0] $end
+$var wire 1 & we $end
+$var parameter 32 . ADDR_WIDTH $end
+$var parameter 32 / DATA_WIDTH $end
+$var parameter 32 0 DEPTH $end
+$var reg 12 1 rdata [11:0] $end
+$upscope $end
+$scope task diff_addr_read_write_check $end
+$var reg 4 2 read_addr [3:0] $end
+$var reg 12 3 read_expected [11:0] $end
+$var reg 4 4 write_addr [3:0] $end
+$var reg 12 5 write_data [11:0] $end
+$upscope $end
+$scope task read_mem_check $end
+$var reg 4 6 addr [3:0] $end
+$var reg 12 7 expected [11:0] $end
+$upscope $end
+$scope task same_addr_read_write_check $end
+$var reg 4 8 addr [3:0] $end
+$var reg 12 9 new_data [11:0] $end
+$var reg 12 : old_data [11:0] $end
+$upscope $end
+$scope task write_mem $end
+$var reg 4 ; addr [3:0] $end
+$var reg 12 < data [11:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b10000 0
+b1100 /
+b100 .
+$end
+#0
+$dumpvars
+bx <
+bx ;
+bx :
+bx 9
+bx 8
+bx 7
+bx 6
+bx 5
+bx 4
+bx 3
+bx 2
+bx 1
+b0 -
+b0 ,
+b0 +
+b10000000000000000000000000000100 *
+b0 )
+b10000000000000000000000000000011 (
+b0 '
+0&
+b0 %
+b0 $
+b0 #
+0"
+bx !
+$end
+#5000
+1"
+#10000
+0"
+#15000
+b100100011 <
+b10 ;
+1"
+#20000
+1&
+b100100011 %
+b100100011 -
+b10 $
+b10 ,
+0"
+#25000
+1"
+#30000
+b101010111100 <
+b101 ;
+b0 %
+b0 -
+b0 $
+b0 ,
+0&
+0"
+#35000
+1"
+#40000
+1&
+b101010111100 %
+b101010111100 -
+b101 $
+b101 ,
+0"
+#45000
+1"
+#50000
+b11110001001 <
+b1001 ;
+b0 %
+b0 -
+b0 $
+b0 ,
+0&
+0"
+#55000
+1"
+#60000
+1&
+b11110001001 %
+b11110001001 -
+b1001 $
+b1001 ,
+0"
+#65000
+1"
+#70000
+b1 )
+b100100011 7
+b10 6
+b0 %
+b0 -
+b0 $
+b0 ,
+0&
+0"
+#75000
+1"
+#80000
+b10 #
+b10 +
+0"
+#85000
+b100100011 !
+b100100011 1
+1"
+#86000
+b10 )
+b101010111100 7
+b101 6
+#90000
+b101 #
+b101 +
+0"
+#95000
+b101010111100 !
+b101010111100 1
+1"
+#96000
+b11 )
+b11110001001 7
+b1001 6
+#100000
+b1001 #
+b1001 +
+0"
+#105000
+b11110001001 !
+b11110001001 1
+1"
+#106000
+b10001010110 <
+b10 ;
+#110000
+1&
+b10001010110 %
+b10001010110 -
+b10 $
+b10 ,
+0"
+#115000
+1"
+#120000
+b100 )
+b10001010110 7
+b10 6
+b0 %
+b0 -
+b0 $
+b0 ,
+0&
+0"
+#125000
+1"
+#130000
+b10 #
+b10 +
+0"
+#135000
+b10001010110 !
+b10001010110 1
+1"
+#136000
+b101 )
+b10101010101 9
+b101010111100 :
+b101 8
+#140000
+1&
+b10101010101 %
+b10101010101 -
+b101 $
+b101 ,
+b101 #
+b101 +
+0"
+#145000
+b101010111100 !
+b101010111100 1
+1"
+#150000
+b0 %
+b0 -
+b0 $
+b0 ,
+0&
+0"
+#155000
+b10101010101 !
+b10101010101 1
+1"
+#156000
+b110 )
+b100110011001 5
+b1001 4
+b10001010110 3
+b10 2
+#160000
+1&
+b100110011001 %
+b100110011001 -
+b1001 $
+b1001 ,
+b10 #
+b10 +
+0"
+#165000
+b10001010110 !
+b10001010110 1
+1"
+#170000
+b111 )
+b100110011001 7
+b1001 6
+b0 %
+b0 -
+b0 $
+b0 ,
+0&
+0"
+#175000
+1"
+#180000
+b1001 #
+b1001 +
+0"
+#185000
+b100110011001 !
+b100110011001 1
+1"
+#186000
+b1101 <
+b0 ;
+#190000
+1&
+b1101 %
+b1101 -
+0"
+#195000
+1"
+#200000
+b111100010101 <
+b1111 ;
+b0 %
+b0 -
+0&
+0"
+#205000
+1"
+#210000
+1&
+b111100010101 %
+b111100010101 -
+b1111 $
+b1111 ,
+0"
+#215000
+1"
+#220000
+b1000 )
+b1101 7
+b0 6
+b0 %
+b0 -
+b0 $
+b0 ,
+0&
+0"
+#225000
+1"
+#230000
+b0 #
+b0 +
+0"
+#235000
+b1101 !
+b1101 1
+1"
+#236000
+b1001 )
+b111100010101 7
+b1111 6
+#240000
+b1111 #
+b1111 +
+0"
+#245000
+b111100010101 !
+b111100010101 1
+1"
+#246000

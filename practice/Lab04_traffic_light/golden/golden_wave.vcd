@@ -1,0 +1,226 @@
+$date
+	Mon May 11 15:57:59 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_traffic_light $end
+$var wire 1 ! yellow $end
+$var wire 4 " timer [3:0] $end
+$var wire 1 # red $end
+$var wire 1 $ green $end
+$var reg 1 % clk $end
+$var reg 1 & rst_n $end
+$var integer 32 ' cycle [31:0] $end
+$var integer 32 ( errors [31:0] $end
+$var integer 32 ) log_fd [31:0] $end
+$var integer 32 * result_fd [31:0] $end
+$scope module dut $end
+$var wire 1 % clk $end
+$var wire 1 & rst_n $end
+$var parameter 4 + GREEN_TIME $end
+$var parameter 4 , RED_TIME $end
+$var parameter 2 - S_GREEN $end
+$var parameter 2 . S_RED $end
+$var parameter 2 / S_YELLOW $end
+$var parameter 4 0 YELLOW_TIME $end
+$var reg 2 1 S [1:0] $end
+$var reg 2 2 S_nxt [1:0] $end
+$var reg 1 $ green $end
+$var reg 1 # red $end
+$var reg 4 3 timer [3:0] $end
+$var reg 4 4 timer_nxt [3:0] $end
+$var reg 1 ! yellow $end
+$upscope $end
+$scope task check $end
+$var reg 1 5 exp_g $end
+$var reg 1 6 exp_r $end
+$var reg 4 7 exp_timer [3:0] $end
+$var reg 1 8 exp_y $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b10 0
+b1 /
+b10 .
+b0 -
+b101 ,
+b101 +
+$end
+#0
+$dumpvars
+x8
+bx 7
+x6
+x5
+b1 4
+b0 3
+b0 2
+b0 1
+b10000000000000000000000000000100 *
+b10000000000000000000000000000011 )
+b0 (
+b0 '
+0&
+0%
+1$
+0#
+b0 "
+0!
+$end
+#5000
+1%
+#10000
+0%
+#15000
+1%
+#20000
+b0 7
+15
+08
+06
+1&
+0%
+#21000
+b1 '
+#25000
+b10 4
+b1 "
+b1 3
+b1 7
+1%
+#26000
+b10 '
+#30000
+0%
+#35000
+b11 4
+b10 "
+b10 3
+b10 7
+1%
+#36000
+b11 '
+#40000
+0%
+#45000
+b100 4
+b11 "
+b11 3
+b11 7
+1%
+#46000
+b100 '
+#50000
+0%
+#55000
+b1 2
+b0 4
+b100 "
+b100 3
+b100 7
+1%
+#56000
+b101 '
+#60000
+0%
+#65000
+1!
+0$
+b1 4
+b0 "
+b0 3
+b1 1
+b0 7
+05
+18
+1%
+#66000
+b110 '
+#70000
+0%
+#75000
+b10 2
+b0 4
+b1 "
+b1 3
+b1 7
+1%
+#76000
+b111 '
+#80000
+0%
+#85000
+1#
+0!
+b1 4
+b0 "
+b0 3
+b10 1
+b0 7
+08
+16
+1%
+#86000
+b1000 '
+#90000
+0%
+#95000
+b10 4
+b1 "
+b1 3
+b1 7
+1%
+#96000
+b1001 '
+#100000
+0%
+#105000
+b11 4
+b10 "
+b10 3
+b10 7
+1%
+#106000
+b1010 '
+#110000
+0%
+#115000
+b100 4
+b11 "
+b11 3
+b11 7
+1%
+#116000
+b1011 '
+#120000
+0%
+#125000
+b0 2
+b0 4
+b100 "
+b100 3
+b100 7
+1%
+#126000
+b1100 '
+#130000
+0%
+#135000
+1$
+0#
+b1 4
+b0 "
+b0 3
+b0 1
+b0 7
+15
+06
+1%
+#136000
+b1101 '

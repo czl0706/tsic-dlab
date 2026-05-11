@@ -1,0 +1,5 @@
+# Ignore simulation generated files
+fixtures/**/sim/*
+
+# Keep sim folders in git
+!fixtures/**/sim/.gitkeep

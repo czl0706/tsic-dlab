@@ -1,0 +1,7 @@
+##SEC_STUDENT_CAN_SEE
+[CASE 1] checks unsorted input
+[CASE 2] checks duplicate values
+[CASE 3] checks range extremes
+[CASE 4] checks descending input
+[PASS] sorter4
+##END_STUDENT_CAN_SEE

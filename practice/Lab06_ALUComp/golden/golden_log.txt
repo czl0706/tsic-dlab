@@ -1,0 +1,5 @@
+##SEC_STUDENT_CAN_SEE
+[CASE 1] checks register write/readback
+[CASE 2-5] checks each ALU operation
+[PASS] alu_comp
+##END_STUDENT_CAN_SEE

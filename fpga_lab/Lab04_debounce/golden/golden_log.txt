@@ -1,0 +1,6 @@
+##SEC_STUDENT_CAN_SEE
+[CASE 1] checks reset release
+[CASE 2-4] checks consecutive high samples
+[CASE 5] checks low sample behavior
+[PASS] debounce
+##END_STUDENT_CAN_SEE

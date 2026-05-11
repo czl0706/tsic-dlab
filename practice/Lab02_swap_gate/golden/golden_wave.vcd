@@ -1,0 +1,420 @@
+$date
+	Mon May 11 15:57:58 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_swap_gate $end
+$var wire 1 ! swap $end
+$var wire 2 " lo [1:0] $end
+$var wire 2 # hi [1:0] $end
+$var reg 2 $ a [1:0] $end
+$var reg 2 % b [1:0] $end
+$var integer 32 & errors [31:0] $end
+$var integer 32 ' log_fd [31:0] $end
+$var integer 32 ( pattern [31:0] $end
+$var integer 32 ) result_fd [31:0] $end
+$scope module dut $end
+$var wire 2 * a [1:0] $end
+$var wire 2 + b [1:0] $end
+$var wire 1 ! swap $end
+$var wire 2 , lo [1:0] $end
+$var wire 2 - hi [1:0] $end
+$var wire 1 . a_gt_b $end
+$scope module u_cmp $end
+$var wire 2 / a [1:0] $end
+$var wire 1 0 a0_gt_b0_when_equal_msb $end
+$var wire 1 1 a1_gt_b1 $end
+$var wire 1 2 a1_xnor_b1 $end
+$var wire 2 3 b [1:0] $end
+$var wire 1 . gt $end
+$var wire 1 4 not_b0 $end
+$var wire 1 5 not_b1 $end
+$upscope $end
+$scope module u_hi $end
+$var wire 2 6 in0 [1:0] $end
+$var wire 1 7 in0_bit0 $end
+$var wire 1 8 in0_bit1 $end
+$var wire 2 9 in1 [1:0] $end
+$var wire 1 : in1_bit0 $end
+$var wire 1 ; in1_bit1 $end
+$var wire 1 < not_sel $end
+$var wire 1 ! sel $end
+$var wire 2 = y [1:0] $end
+$upscope $end
+$scope module u_lo $end
+$var wire 2 > in0 [1:0] $end
+$var wire 1 ? in0_bit0 $end
+$var wire 1 @ in0_bit1 $end
+$var wire 2 A in1 [1:0] $end
+$var wire 1 B in1_bit0 $end
+$var wire 1 C in1_bit1 $end
+$var wire 1 D not_sel $end
+$var wire 1 ! sel $end
+$var wire 2 E y [1:0] $end
+$upscope $end
+$upscope $end
+$scope task check $end
+$var reg 2 F exp_hi [1:0] $end
+$var reg 2 G exp_lo [1:0] $end
+$var reg 1 H exp_swap $end
+$var reg 2 I va [1:0] $end
+$var reg 2 J vb [1:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b1 J
+b0 I
+0H
+b0 G
+b1 F
+b0 E
+1D
+0C
+0B
+b1 A
+0@
+0?
+b0 >
+b1 =
+1<
+0;
+0:
+b0 9
+08
+17
+b1 6
+15
+04
+b1 3
+12
+01
+00
+b0 /
+0.
+b1 -
+b0 ,
+b1 +
+b0 *
+b10000000000000000000000000000100 )
+b1 (
+b10000000000000000000000000000011 '
+b0 &
+b1 %
+b0 $
+b1 #
+b0 "
+0!
+$end
+#1000
+b10 #
+b10 -
+b10 =
+b1 "
+b1 ,
+b1 E
+05
+14
+02
+07
+18
+1?
+b10 %
+b10 +
+b10 3
+b10 6
+b10 A
+b1 $
+b1 *
+b1 /
+b1 9
+b1 >
+b10 (
+b10 F
+b1 G
+b10 J
+b1 I
+#2000
+b11 #
+b11 -
+b11 =
+b10 "
+b10 ,
+b10 E
+04
+17
+12
+0?
+1@
+b11 %
+b11 +
+b11 3
+b11 6
+b11 A
+b10 $
+b10 *
+b10 /
+b10 9
+b10 >
+b11 (
+b11 F
+b10 G
+b11 J
+b10 I
+#3000
+b0 "
+b0 ,
+b0 E
+02
+0@
+b0 $
+b0 *
+b0 /
+b0 9
+b0 >
+b100 (
+b0 G
+b0 I
+#4000
+0<
+1:
+0D
+1!
+1.
+10
+b1 #
+b1 -
+b1 =
+b0 "
+b0 ,
+b0 E
+15
+14
+12
+07
+08
+0?
+b0 %
+b0 +
+b0 3
+b0 6
+b0 A
+b1 $
+b1 *
+b1 /
+b1 9
+b1 >
+b101 (
+1H
+b1 F
+b0 J
+b1 I
+#5000
+b1 "
+b1 ,
+b1 E
+b10 #
+b10 -
+b10 =
+04
+1B
+11
+02
+00
+0:
+1;
+b1 %
+b1 +
+b1 3
+b1 6
+b1 A
+b10 $
+b10 *
+b10 /
+b10 9
+b10 >
+b110 (
+b10 F
+b1 G
+b1 J
+b10 I
+#6000
+01
+10
+b10 "
+b10 ,
+b10 E
+b11 #
+b11 -
+b11 =
+05
+14
+12
+0B
+1C
+1:
+b10 %
+b10 +
+b10 3
+b10 6
+b10 A
+b11 $
+b11 *
+b11 /
+b11 9
+b11 >
+b111 (
+b11 F
+b10 G
+b10 J
+b11 I
+#7000
+11
+00
+b0 "
+b0 ,
+b0 E
+15
+02
+0C
+b0 %
+b0 +
+b0 3
+b0 6
+b0 A
+b1000 (
+b0 G
+b0 J
+#8000
+1<
+1D
+0!
+0.
+b0 #
+b0 -
+b0 =
+01
+12
+0:
+0;
+b0 $
+b0 *
+b0 /
+b0 9
+b0 >
+b1001 (
+0H
+b0 F
+b0 I
+#9000
+1<
+0:
+1D
+0B
+b1 #
+b1 -
+b1 =
+0!
+0.
+b1 "
+b1 ,
+b1 E
+04
+17
+00
+1?
+b1 %
+b1 +
+b1 3
+b1 6
+b1 A
+b1 $
+b1 *
+b1 /
+b1 9
+b1 >
+b1010 (
+b1 F
+b1 G
+b1 J
+b1 I
+#10000
+1<
+0;
+1D
+0C
+b10 #
+b10 -
+b10 =
+0!
+0.
+b10 "
+b10 ,
+b10 E
+05
+14
+07
+18
+01
+0?
+1@
+b10 %
+b10 +
+b10 3
+b10 6
+b10 A
+b10 $
+b10 *
+b10 /
+b10 9
+b10 >
+b1011 (
+b10 F
+b10 G
+b10 J
+b10 I
+#11000
+18
+1@
+1<
+0:
+0;
+1D
+0B
+0C
+b11 #
+b11 -
+b11 =
+0!
+0.
+b11 "
+b11 ,
+b11 E
+04
+17
+00
+1?
+b11 %
+b11 +
+b11 3
+b11 6
+b11 A
+b11 $
+b11 *
+b11 /
+b11 9
+b11 >
+b1100 (
+b11 F
+b11 G
+b11 J
+b11 I
+#12000

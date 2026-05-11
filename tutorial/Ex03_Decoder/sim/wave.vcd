@@ -1,0 +1,77 @@
+$date
+	Mon May 11 16:36:22 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_ex03_decoder $end
+$var wire 4 ! onehot_shift [3:0] $end
+$var wire 4 " onehot_case [3:0] $end
+$var reg 2 # sel [1:0] $end
+$var integer 32 $ errors [31:0] $end
+$var integer 32 % log_fd [31:0] $end
+$var integer 32 & pattern [31:0] $end
+$var integer 32 ' result_fd [31:0] $end
+$scope module dut $end
+$var wire 2 ( sel [1:0] $end
+$var wire 4 ) onehot_shift [3:0] $end
+$var reg 4 * onehot_case [3:0] $end
+$upscope $end
+$scope task check $end
+$var reg 4 + expected [3:0] $end
+$var reg 2 , s [1:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 ,
+b1 +
+b1 *
+b1 )
+b0 (
+b10000000000000000000000000000100 '
+b1 &
+b10000000000000000000000000000011 %
+b0 $
+b0 #
+b1 "
+b1 !
+$end
+#1000
+b10 "
+b10 *
+b10 !
+b10 )
+b1 #
+b1 (
+b10 &
+b10 +
+b1 ,
+#2000
+b100 "
+b100 *
+b100 !
+b100 )
+b10 #
+b10 (
+b11 &
+b100 +
+b10 ,
+#3000
+b1000 "
+b1000 *
+b1000 !
+b1000 )
+b11 #
+b11 (
+b100 &
+b1000 +
+b11 ,
+#4000

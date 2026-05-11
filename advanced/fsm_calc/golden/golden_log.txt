@@ -1,0 +1,6 @@
+##SEC_STUDENT_CAN_SEE
+[CASE 1-15] checks add, subtract, multiply flows
+[CASE 16-26] checks result, operator-change, repeated-equals flows
+[CASE 27-33] checks chained operation flow
+[PASS] fsm_calc
+##END_STUDENT_CAN_SEE
