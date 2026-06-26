@@ -1,0 +1,6 @@
+##SEC_STUDENT_CAN_SEE
+[CASE 1] checks reset seed
+[CASE 2-9] checks enabled 4-bit LFSR sequence
+[CASE 10] checks hold when disabled
+[PASS] lfsr_4bits
+##END_STUDENT_CAN_SEE

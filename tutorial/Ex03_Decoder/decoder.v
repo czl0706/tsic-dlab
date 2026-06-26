@@ -1,4 +1,4 @@
-module Ex03_Decoder (
+module Ex03_decoder (
     input  [1:0] sel,
     output reg [3:0] onehot_case,
     output     [3:0] onehot_shift

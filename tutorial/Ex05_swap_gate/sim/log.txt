@@ -1,0 +1,6 @@
+##SEC_STUDENT_CAN_SEE
+[CASE 1-4] checks no-swap cases
+[CASE 5-8] checks swap cases
+[CASE 9-12] checks equal-value cases
+[PASS] swap_gate
+##END_STUDENT_CAN_SEE

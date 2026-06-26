@@ -1,0 +1,4 @@
+##SEC_STUDENT_CAN_SEE
+[CASE 1-5] checks bitwise logic, reductions, and masks
+[PASS] logic_mask
+##END_STUDENT_CAN_SEE

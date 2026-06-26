@@ -1,64 +1,64 @@
-{
-  "extensionVersion": "1.5.2",
-  "fileName": "f:\\data\\@School\\114-2\\TSIC\\extension\\fixtures\\fpga_lab\\Lab05_pulse_detector\\golden\\golden_wave.vcd",
-  "markerTime": null,
-  "altMarkerTime": null,
-  "displayTimeUnit": "ps",
-  "selectedSignal": null,
-  "zoomRatio": 0.01634943181818182,
-  "scrollLeft": 0,
-  "displayedSignals": [
-    {
-      "dataType": "netlist-variable",
-      "netlistId": 8,
-      "name": "tb_pulse_detector.dut.clk",
-      "numberFormat": "binary",
-      "colorIndex": 0,
-      "rowHeight": 1,
-      "verticalScale": 1,
-      "nameType": "fullPath",
-      "customName": "clk",
-      "renderType": "binary",
-      "valueLinkCommand": ""
-    },
-    {
-      "dataType": "netlist-variable",
-      "netlistId": 9,
-      "name": "tb_pulse_detector.dut.in",
-      "numberFormat": "binary",
-      "colorIndex": 0,
-      "rowHeight": 1,
-      "verticalScale": 1,
-      "nameType": "fullPath",
-      "customName": "in",
-      "renderType": "binary",
-      "valueLinkCommand": ""
-    },
-    {
-      "dataType": "netlist-variable",
-      "netlistId": 12,
-      "name": "tb_pulse_detector.dut.pulse",
-      "numberFormat": "binary",
-      "colorIndex": 0,
-      "rowHeight": 1,
-      "verticalScale": 1,
-      "nameType": "fullPath",
-      "customName": "pulse",
-      "renderType": "binary",
-      "valueLinkCommand": ""
-    },
-    {
-      "dataType": "netlist-variable",
-      "netlistId": 10,
-      "name": "tb_pulse_detector.dut.rst",
-      "numberFormat": "binary",
-      "colorIndex": 0,
-      "rowHeight": 1,
-      "verticalScale": 1,
-      "nameType": "fullPath",
-      "customName": "rst",
-      "renderType": "binary",
-      "valueLinkCommand": ""
-    }
-  ]
+﻿{
+    "extensionVersion":  "1.5.2",
+    "fileName":  "golden_wave.vcd",
+    "markerTime":  null,
+    "altMarkerTime":  null,
+    "displayTimeUnit":  "ps",
+    "selectedSignal":  null,
+    "zoomRatio":  0.01634943181818182,
+    "scrollLeft":  0,
+    "displayedSignals":  [
+                             {
+                                 "dataType":  "netlist-variable",
+                                 "netlistId":  8,
+                                 "name":  "tb_pulse_detector.dut.clk",
+                                 "numberFormat":  "binary",
+                                 "colorIndex":  0,
+                                 "rowHeight":  1,
+                                 "verticalScale":  1,
+                                 "nameType":  "fullPath",
+                                 "customName":  "clk",
+                                 "renderType":  "binary",
+                                 "valueLinkCommand":  ""
+                             },
+                             {
+                                 "dataType":  "netlist-variable",
+                                 "netlistId":  9,
+                                 "name":  "tb_pulse_detector.dut.in",
+                                 "numberFormat":  "binary",
+                                 "colorIndex":  0,
+                                 "rowHeight":  1,
+                                 "verticalScale":  1,
+                                 "nameType":  "fullPath",
+                                 "customName":  "in",
+                                 "renderType":  "binary",
+                                 "valueLinkCommand":  ""
+                             },
+                             {
+                                 "dataType":  "netlist-variable",
+                                 "netlistId":  12,
+                                 "name":  "tb_pulse_detector.dut.pulse",
+                                 "numberFormat":  "binary",
+                                 "colorIndex":  0,
+                                 "rowHeight":  1,
+                                 "verticalScale":  1,
+                                 "nameType":  "fullPath",
+                                 "customName":  "pulse",
+                                 "renderType":  "binary",
+                                 "valueLinkCommand":  ""
+                             },
+                             {
+                                 "dataType":  "netlist-variable",
+                                 "netlistId":  10,
+                                 "name":  "tb_pulse_detector.dut.rst",
+                                 "numberFormat":  "binary",
+                                 "colorIndex":  0,
+                                 "rowHeight":  1,
+                                 "verticalScale":  1,
+                                 "nameType":  "fullPath",
+                                 "customName":  "rst",
+                                 "renderType":  "binary",
+                                 "valueLinkCommand":  ""
+                             }
+                         ]
 }

@@ -1,0 +1,133 @@
+$date
+	Fri Jun 26 13:17:03 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_basic_wire $end
+$var wire 8 ! const_42 [7:0] $end
+$var wire 16 " zero_ext [15:0] $end
+$var wire 8 # swap_nibble [7:0] $end
+$var wire 16 $ sign_ext [15:0] $end
+$var wire 8 % pass [7:0] $end
+$var wire 4 & lo_nibble [3:0] $end
+$var wire 4 ' hi_nibble [3:0] $end
+$var reg 8 ( in [7:0] $end
+$var integer 32 ) errors [31:0] $end
+$var integer 32 * log_fd [31:0] $end
+$var integer 32 + pattern [31:0] $end
+$var integer 32 , result_fd [31:0] $end
+$scope module dut $end
+$var wire 8 - const_42 [7:0] $end
+$var wire 8 . in [7:0] $end
+$var wire 8 / pass [7:0] $end
+$var wire 16 0 zero_ext [15:0] $end
+$var wire 8 1 swap_nibble [7:0] $end
+$var wire 16 2 sign_ext [15:0] $end
+$var wire 4 3 lo_nibble [3:0] $end
+$var wire 4 4 hi_nibble [3:0] $end
+$upscope $end
+$scope task check $end
+$var reg 8 5 value [7:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 5
+b0 4
+b0 3
+b0 2
+b0 1
+b0 0
+b0 /
+b0 .
+b101010 -
+b10000000000000000000000000000100 ,
+b1 +
+b10000000000000000000000000000011 *
+b0 )
+b0 (
+b0 '
+b0 &
+b0 %
+b0 $
+b0 #
+b0 "
+b101010 !
+$end
+#1000
+b1100 &
+b1100 3
+b11 '
+b11 4
+b11000011 #
+b11000011 1
+b111100 %
+b111100 /
+b111100 "
+b111100 0
+b111100 $
+b111100 2
+b111100 (
+b111100 .
+b10 +
+b111100 5
+#2000
+b0 &
+b0 3
+b1000 '
+b1000 4
+b1000 #
+b1000 1
+b10000000 %
+b10000000 /
+b10000000 "
+b10000000 0
+b1111111110000000 $
+b1111111110000000 2
+b10000000 (
+b10000000 .
+b11 +
+b10000000 5
+#3000
+b1111 &
+b1111 3
+b1111 '
+b1111 4
+b11111111 #
+b11111111 1
+b11111111 %
+b11111111 /
+b11111111 "
+b11111111 0
+b1111111111111111 $
+b1111111111111111 2
+b11111111 (
+b11111111 .
+b100 +
+b11111111 5
+#4000
+b101 &
+b101 3
+b1010 '
+b1010 4
+b1011010 #
+b1011010 1
+b10100101 %
+b10100101 /
+b10100101 "
+b10100101 0
+b1111111110100101 $
+b1111111110100101 2
+b10100101 (
+b10100101 .
+b101 +
+b10100101 5
+#5000

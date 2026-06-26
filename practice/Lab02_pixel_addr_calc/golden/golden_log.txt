@@ -1,0 +1,4 @@
+##SEC_STUDENT_CAN_SEE
+[CASE 1-8] checks framebuffer, tile, local, and sprite address calculations
+[PASS] pixel_addr_calc
+##END_STUDENT_CAN_SEE

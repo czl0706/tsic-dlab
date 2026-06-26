@@ -6,7 +6,7 @@ module tb_ex04_condition;
     wire [7:0] clamped;
     integer errors, log_fd, result_fd, pattern;
 
-    Ex04_Condition dut(.a(a), .b(b), .value(value), .low(low), .high(high), .a_gt_b(a_gt_b), .a_eq_b(a_eq_b), .value_in_range(value_in_range), .larger(larger), .smaller(smaller), .clamped(clamped));
+    Ex04_condition dut(.a(a), .b(b), .value(value), .low(low), .high(high), .a_gt_b(a_gt_b), .a_eq_b(a_eq_b), .value_in_range(value_in_range), .larger(larger), .smaller(smaller), .clamped(clamped));
 
     task check;
         input [7:0] ia, ib, ivalue, ilow, ihigh;
@@ -34,8 +34,8 @@ module tb_ex04_condition;
         check(8'd9, 8'd3, 8'd5, 8'd2, 8'd8);
         check(8'd3, 8'd9, 8'd1, 8'd2, 8'd8);
         check(8'd7, 8'd7, 8'd9, 8'd2, 8'd8);
-        if(errors==0) begin $display("[PASS] Ex04_Condition"); $fdisplay(log_fd,"[PASS] Ex04_Condition"); $fdisplay(result_fd,"pass"); end
-        else begin $display("[FAIL] Ex04_Condition, errors = %0d", errors); $fdisplay(log_fd,"[FAIL] Ex04_Condition, errors = %0d", errors); $fdisplay(result_fd,"fail"); end
+        if(errors==0) begin $display("[PASS] Ex04_condition"); $fdisplay(log_fd,"[PASS] Ex04_condition"); $fdisplay(result_fd,"pass"); end
+        else begin $display("[FAIL] Ex04_condition, errors = %0d", errors); $fdisplay(log_fd,"[FAIL] Ex04_condition, errors = %0d", errors); $fdisplay(result_fd,"fail"); end
         $display("##END_STUDENT_CAN_SEE"); $fdisplay(log_fd,"##END_STUDENT_CAN_SEE");
         $fclose(log_fd); $fclose(result_fd); $finish;
     end

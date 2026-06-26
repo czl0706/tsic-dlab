@@ -1,0 +1,8 @@
+##SEC_STUDENT_CAN_SEE
+[CASE 1] checks reset output
+[CASE 2-101] checks 30 percent duty cycle
+[CASE 102-201] checks dynamic duty update to 75 percent
+[CASE 202-301] checks zero percent duty
+[CASE 302-401] checks 100 percent duty
+[PASS] pwm
+##END_STUDENT_CAN_SEE

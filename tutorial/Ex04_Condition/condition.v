@@ -1,4 +1,4 @@
-module Ex04_Condition (
+module Ex04_condition (
     input  [7:0] a,
     input  [7:0] b,
     input  [7:0] value,

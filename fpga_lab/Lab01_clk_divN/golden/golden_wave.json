@@ -1,68 +1,68 @@
-{
-  "extensionVersion": "1.5.2",
-  "fileName": "f:\\data\\@School\\114-2\\TSIC\\extension\\fixtures\\fpga_lab\\Lab01_clk_divN\\golden\\golden_wave.vcd",
-  "markerTime": null,
-  "altMarkerTime": null,
-  "displayTimeUnit": "ps",
-  "selectedSignal": {
-    "name": "tb_clk_divN.dut.rst",
-    "msb": -1,
-    "lsb": -1
-  },
-  "zoomRatio": 0.01158985409471257,
-  "scrollLeft": 0,
-  "displayedSignals": [
-    {
-      "dataType": "netlist-variable",
-      "netlistId": 11,
-      "name": "tb_clk_divN.dut.N",
-      "numberFormat": "hexadecimal",
-      "colorIndex": 2,
-      "rowHeight": 1,
-      "verticalScale": 1,
-      "nameType": "fullPath",
-      "customName": "N",
-      "renderType": "multiBit",
-      "valueLinkCommand": ""
-    },
-    {
-      "dataType": "netlist-variable",
-      "netlistId": 9,
-      "name": "tb_clk_divN.dut.clk_in",
-      "numberFormat": "binary",
-      "colorIndex": 0,
-      "rowHeight": 1,
-      "verticalScale": 1,
-      "nameType": "fullPath",
-      "customName": "clk_in",
-      "renderType": "binary",
-      "valueLinkCommand": ""
-    },
-    {
-      "dataType": "netlist-variable",
-      "netlistId": 12,
-      "name": "tb_clk_divN.dut.clk_out",
-      "numberFormat": "binary",
-      "colorIndex": 0,
-      "rowHeight": 1,
-      "verticalScale": 1,
-      "nameType": "fullPath",
-      "customName": "clk_out",
-      "renderType": "binary",
-      "valueLinkCommand": ""
-    },
-    {
-      "dataType": "netlist-variable",
-      "netlistId": 10,
-      "name": "tb_clk_divN.dut.rst",
-      "numberFormat": "binary",
-      "colorIndex": 0,
-      "rowHeight": 1,
-      "verticalScale": 1,
-      "nameType": "fullPath",
-      "customName": "rst",
-      "renderType": "binary",
-      "valueLinkCommand": ""
-    }
-  ]
+﻿{
+    "extensionVersion":  "1.5.2",
+    "fileName":  "golden_wave.vcd",
+    "markerTime":  null,
+    "altMarkerTime":  null,
+    "displayTimeUnit":  "ps",
+    "selectedSignal":  {
+                           "name":  "tb_clk_divN.dut.rst",
+                           "msb":  -1,
+                           "lsb":  -1
+                       },
+    "zoomRatio":  0.01158985409471257,
+    "scrollLeft":  0,
+    "displayedSignals":  [
+                             {
+                                 "dataType":  "netlist-variable",
+                                 "netlistId":  11,
+                                 "name":  "tb_clk_divN.dut.N",
+                                 "numberFormat":  "hexadecimal",
+                                 "colorIndex":  2,
+                                 "rowHeight":  1,
+                                 "verticalScale":  1,
+                                 "nameType":  "fullPath",
+                                 "customName":  "N",
+                                 "renderType":  "multiBit",
+                                 "valueLinkCommand":  ""
+                             },
+                             {
+                                 "dataType":  "netlist-variable",
+                                 "netlistId":  9,
+                                 "name":  "tb_clk_divN.dut.clk_in",
+                                 "numberFormat":  "binary",
+                                 "colorIndex":  0,
+                                 "rowHeight":  1,
+                                 "verticalScale":  1,
+                                 "nameType":  "fullPath",
+                                 "customName":  "clk_in",
+                                 "renderType":  "binary",
+                                 "valueLinkCommand":  ""
+                             },
+                             {
+                                 "dataType":  "netlist-variable",
+                                 "netlistId":  12,
+                                 "name":  "tb_clk_divN.dut.clk_out",
+                                 "numberFormat":  "binary",
+                                 "colorIndex":  0,
+                                 "rowHeight":  1,
+                                 "verticalScale":  1,
+                                 "nameType":  "fullPath",
+                                 "customName":  "clk_out",
+                                 "renderType":  "binary",
+                                 "valueLinkCommand":  ""
+                             },
+                             {
+                                 "dataType":  "netlist-variable",
+                                 "netlistId":  10,
+                                 "name":  "tb_clk_divN.dut.rst",
+                                 "numberFormat":  "binary",
+                                 "colorIndex":  0,
+                                 "rowHeight":  1,
+                                 "verticalScale":  1,
+                                 "nameType":  "fullPath",
+                                 "customName":  "rst",
+                                 "renderType":  "binary",
+                                 "valueLinkCommand":  ""
+                             }
+                         ]
 }

@@ -1,4 +1,4 @@
-module Ex02_Arithmetic (
+module Ex02_arithmetic (
     input      [7:0] in_a,
     input      [7:0] in_b,
     output     [8:0]  u_add,

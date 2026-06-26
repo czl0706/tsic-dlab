@@ -4,7 +4,7 @@ module tb_ex03_decoder;
     wire [3:0] onehot_case, onehot_shift;
     integer errors, log_fd, result_fd, pattern;
 
-    Ex03_Decoder dut(.sel(sel), .onehot_case(onehot_case), .onehot_shift(onehot_shift));
+    Ex03_decoder dut(.sel(sel), .onehot_case(onehot_case), .onehot_shift(onehot_shift));
 
     task check;
         input [1:0] s;
@@ -26,8 +26,8 @@ module tb_ex03_decoder;
         $display("##SEC_STUDENT_CAN_SEE"); $fdisplay(log_fd,"##SEC_STUDENT_CAN_SEE");
         errors=0; pattern=0;
         check(2'd0,4'b0001); check(2'd1,4'b0010); check(2'd2,4'b0100); check(2'd3,4'b1000);
-        if(errors==0) begin $display("[PASS] Ex03_Decoder"); $fdisplay(log_fd,"[PASS] Ex03_Decoder"); $fdisplay(result_fd,"pass"); end
-        else begin $display("[FAIL] Ex03_Decoder, errors = %0d", errors); $fdisplay(log_fd,"[FAIL] Ex03_Decoder, errors = %0d", errors); $fdisplay(result_fd,"fail"); end
+        if(errors==0) begin $display("[PASS] Ex03_decoder"); $fdisplay(log_fd,"[PASS] Ex03_decoder"); $fdisplay(result_fd,"pass"); end
+        else begin $display("[FAIL] Ex03_decoder, errors = %0d", errors); $fdisplay(log_fd,"[FAIL] Ex03_decoder, errors = %0d", errors); $fdisplay(result_fd,"fail"); end
         $display("##END_STUDENT_CAN_SEE"); $fdisplay(log_fd,"##END_STUDENT_CAN_SEE");
         $fclose(log_fd); $fclose(result_fd); $finish;
     end

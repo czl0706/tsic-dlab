@@ -1,0 +1,4 @@
+##SEC_STUDENT_CAN_SEE
+[CASE 1-5] checks pass-through, constants, nibbles, extensions, and nibble swap
+[PASS] basic_wire
+##END_STUDENT_CAN_SEE

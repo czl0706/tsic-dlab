@@ -1,0 +1,280 @@
+$date
+	Fri Jun 26 13:17:03 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_pixel_addr_calc $end
+$var wire 5 ! tile_y [4:0] $end
+$var wire 6 " tile_x [5:0] $end
+$var wire 11 # tile_index [10:0] $end
+$var wire 8 $ sprite_addr [7:0] $end
+$var wire 19 % pixel_index [18:0] $end
+$var wire 4 & local_y [3:0] $end
+$var wire 4 ' local_x [3:0] $end
+$var wire 20 ( byte_addr [19:0] $end
+$var reg 10 ) x [9:0] $end
+$var reg 9 * y [8:0] $end
+$var integer 32 + errors [31:0] $end
+$var integer 32 , log_fd [31:0] $end
+$var integer 32 - pattern [31:0] $end
+$var integer 32 . result_fd [31:0] $end
+$scope module dut $end
+$var wire 10 / x [9:0] $end
+$var wire 9 0 y [8:0] $end
+$var wire 5 1 tile_y [4:0] $end
+$var wire 6 2 tile_x [5:0] $end
+$var wire 11 3 tile_index [10:0] $end
+$var wire 8 4 sprite_addr [7:0] $end
+$var wire 19 5 pixel_index [18:0] $end
+$var wire 4 6 local_y [3:0] $end
+$var wire 4 7 local_x [3:0] $end
+$var wire 20 8 byte_addr [19:0] $end
+$var parameter 32 9 SCREEN_W $end
+$var parameter 32 : TILES_X $end
+$upscope $end
+$scope task check $end
+$var reg 20 ; exp_byte_addr [19:0] $end
+$var reg 4 < exp_local_x [3:0] $end
+$var reg 4 = exp_local_y [3:0] $end
+$var reg 19 > exp_pixel_index [18:0] $end
+$var reg 8 ? exp_sprite_addr [7:0] $end
+$var reg 11 @ exp_tile_index [10:0] $end
+$var reg 6 A exp_tile_x [5:0] $end
+$var reg 5 B exp_tile_y [4:0] $end
+$var reg 10 C vx [9:0] $end
+$var reg 9 D vy [8:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b101000 :
+b1010000000 9
+$end
+#0
+$dumpvars
+b0 D
+b0 C
+b0 B
+b0 A
+b0 @
+b0 ?
+b0 >
+b0 =
+b0 <
+b0 ;
+b0 8
+b0 7
+b0 6
+b0 5
+b0 4
+b0 3
+b0 2
+b0 1
+b0 0
+b0 /
+b10000000000000000000000000000100 .
+b1 -
+b10000000000000000000000000000011 ,
+b0 +
+b0 *
+b0 )
+b0 (
+b0 '
+b0 &
+b0 %
+b0 $
+b0 #
+b0 "
+b0 !
+$end
+#1000
+b10 (
+b10 8
+b1 %
+b1 5
+b1 $
+b1 4
+b1 '
+b1 7
+b1 ?
+b1 <
+b10 ;
+b1 >
+b1 )
+b1 /
+b10 -
+b1 C
+#2000
+b10100000000 (
+b10100000000 8
+b1 &
+b1 6
+b1010000000 %
+b1010000000 5
+b10000 $
+b10000 4
+b0 '
+b0 7
+b10000 ?
+b1 =
+b0 <
+b10100000000 ;
+b1010000000 >
+b1 *
+b1 0
+b0 )
+b0 /
+b11 -
+b1 D
+b0 C
+#3000
+b100101100011110 (
+b100101100011110 8
+b1111 &
+b1111 6
+b10010110001111 %
+b10010110001111 5
+b11111111 $
+b11111111 4
+b1111 '
+b1111 7
+b11111111 ?
+b1111 =
+b1111 <
+b100101100011110 ;
+b10010110001111 >
+b1111 *
+b1111 0
+b1111 )
+b1111 /
+b100 -
+b1111 D
+b1111 C
+#4000
+b1 #
+b1 3
+b100000 (
+b100000 8
+b1 "
+b1 2
+b0 &
+b0 6
+b10000 %
+b10000 5
+b0 $
+b0 4
+b0 '
+b0 7
+b0 ?
+b0 =
+b0 <
+b1 @
+b1 A
+b100000 ;
+b10000 >
+b0 *
+b0 0
+b10000 )
+b10000 /
+b101 -
+b0 D
+b10000 C
+#5000
+b101001 #
+b101001 3
+b1 !
+b1 1
+b101010100111110 (
+b101010100111110 8
+b1 &
+b1 6
+b10101010011111 %
+b10101010011111 5
+b11111 $
+b11111 4
+b1111 '
+b1111 7
+b11111 ?
+b1 =
+b1111 <
+b101001 @
+b1 B
+b101010100111110 ;
+b10101010011111 >
+b10001 *
+b10001 0
+b11111 )
+b11111 /
+b110 -
+b10001 D
+b11111 C
+#6000
+b1111110 #
+b1111110 3
+b11 !
+b11 1
+b1111101011001000 (
+b1111101011001000 8
+b110 "
+b110 2
+b10 &
+b10 6
+b111110101100100 %
+b111110101100100 5
+b100100 $
+b100100 4
+b100 '
+b100 7
+b100100 ?
+b10 =
+b100 <
+b1111110 @
+b11 B
+b110 A
+b1111101011001000 ;
+b111110101100100 >
+b110010 *
+b110010 0
+b1100100 )
+b1100100 /
+b111 -
+b110010 D
+b1100100 C
+#7000
+b10010101111 #
+b10010101111 3
+b11101 !
+b11101 1
+b10010101111111111110 (
+b10010101111111111110 8
+b100111 "
+b100111 2
+b1111 &
+b1111 6
+b1001010111111111111 %
+b1001010111111111111 5
+b11111111 $
+b11111111 4
+b1111 '
+b1111 7
+b11111111 ?
+b1111 =
+b1111 <
+b10010101111 @
+b11101 B
+b100111 A
+b10010101111111111110 ;
+b1001010111111111111 >
+b111011111 *
+b111011111 0
+b1001111111 )
+b1001111111 /
+b1000 -
+b111011111 D
+b1001111111 C
+#8000

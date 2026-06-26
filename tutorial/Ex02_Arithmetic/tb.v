@@ -12,7 +12,7 @@ module tb_ex02_arithmetic;
     wire signed [7:0] s_sr_logic, s_sr_arith, s_sl;
     integer errors, log_fd, result_fd, pattern;
 
-    Ex02_Arithmetic dut(
+    Ex02_arithmetic dut(
         .in_a(in_a), .in_b(in_b),
         .u_add(u_add), .u_sub(u_sub), .u_add_8(u_add_8), .u_sub_8(u_sub_8), .u_add_ext(u_add_ext), .u_sub_ext(u_sub_ext),
         .u_mul(u_mul), .u_sr(u_sr), .u_sl(u_sl), .u_sl_wide(u_sl_wide),
@@ -59,8 +59,8 @@ module tb_ex02_arithmetic;
         check(8'd12, 8'd3,  8'sd12,  -8'sd3, 2'd1);
         check(8'd250,8'd10, -8'sd16,  8'sd5, 2'd2);
         check(8'd15, 8'd20, -8'sd64, -8'sd2, 2'd3);
-        if(errors==0) begin $display("[PASS] Ex02_Arithmetic"); $fdisplay(log_fd,"[PASS] Ex02_Arithmetic"); $fdisplay(result_fd,"pass"); end
-        else begin $display("[FAIL] Ex02_Arithmetic, errors = %0d", errors); $fdisplay(log_fd,"[FAIL] Ex02_Arithmetic, errors = %0d", errors); $fdisplay(result_fd,"fail"); end
+        if(errors==0) begin $display("[PASS] Ex02_arithmetic"); $fdisplay(log_fd,"[PASS] Ex02_arithmetic"); $fdisplay(result_fd,"pass"); end
+        else begin $display("[FAIL] Ex02_arithmetic, errors = %0d", errors); $fdisplay(log_fd,"[FAIL] Ex02_arithmetic, errors = %0d", errors); $fdisplay(result_fd,"fail"); end
         $display("##END_STUDENT_CAN_SEE"); $fdisplay(log_fd,"##END_STUDENT_CAN_SEE");
         $fclose(log_fd); $fclose(result_fd); $finish;
     end

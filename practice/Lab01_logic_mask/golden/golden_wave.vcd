@@ -1,0 +1,164 @@
+$date
+	Fri Jun 26 13:17:03 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_logic_mask $end
+$var wire 8 ! xor_ab [7:0] $end
+$var wire 8 " or_ab [7:0] $end
+$var wire 1 # odd_parity $end
+$var wire 8 $ nand_ab [7:0] $end
+$var wire 8 % keep_low [7:0] $end
+$var wire 8 & keep_high [7:0] $end
+$var wire 8 ' inv_a [7:0] $end
+$var wire 1 ( has_one $end
+$var wire 8 ) and_ab [7:0] $end
+$var wire 1 * all_one $end
+$var reg 8 + a [7:0] $end
+$var reg 8 , b [7:0] $end
+$var integer 32 - errors [31:0] $end
+$var integer 32 . log_fd [31:0] $end
+$var integer 32 / pattern [31:0] $end
+$var integer 32 0 result_fd [31:0] $end
+$scope module dut $end
+$var wire 8 1 a [7:0] $end
+$var wire 8 2 and_ab [7:0] $end
+$var wire 8 3 b [7:0] $end
+$var wire 8 4 inv_a [7:0] $end
+$var wire 8 5 keep_high [7:0] $end
+$var wire 8 6 keep_low [7:0] $end
+$var wire 8 7 nand_ab [7:0] $end
+$var wire 8 8 or_ab [7:0] $end
+$var wire 8 9 xor_ab [7:0] $end
+$var wire 1 # odd_parity $end
+$var wire 1 ( has_one $end
+$var wire 1 * all_one $end
+$upscope $end
+$scope task check $end
+$var reg 8 : va [7:0] $end
+$var reg 8 ; vb [7:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b11111111 ;
+b0 :
+b11111111 9
+b11111111 8
+b11111111 7
+b0 6
+b0 5
+b11111111 4
+b11111111 3
+b0 2
+b0 1
+b10000000000000000000000000000100 0
+b1 /
+b10000000000000000000000000000011 .
+b0 -
+b11111111 ,
+b0 +
+0*
+b0 )
+0(
+b11111111 '
+b0 &
+b0 %
+b11111111 $
+0#
+b11111111 "
+b11111111 !
+$end
+#1000
+b0 '
+b0 4
+b1111 %
+b1111 6
+b11110000 &
+b11110000 5
+b0 ,
+b0 3
+1(
+1*
+b11111111 +
+b11111111 1
+b10 /
+b0 ;
+b11111111 :
+#2000
+b1111101 $
+b1111101 7
+b1010101 '
+b1010101 4
+b10000010 )
+b10000010 2
+b11101011 "
+b11101011 8
+b1101001 !
+b1101001 9
+b1010 %
+b1010 6
+b10100000 &
+b10100000 5
+b11000011 ,
+b11000011 3
+0*
+b10101010 +
+b10101010 1
+b11 /
+b11000011 ;
+b10101010 :
+#3000
+b11110011 $
+b11110011 7
+b11110000 '
+b11110000 4
+b1100 )
+b1100 2
+b111111 "
+b111111 8
+b110011 !
+b110011 9
+b1111 %
+b1111 6
+b0 &
+b0 5
+b111100 ,
+b111100 3
+b1111 +
+b1111 1
+b100 /
+b111100 ;
+b1111 :
+#4000
+b11111111 $
+b11111111 7
+b1111111 '
+b1111111 4
+b0 )
+b0 2
+b11111111 "
+b11111111 8
+b11111111 !
+b11111111 9
+b0 %
+b0 6
+b10000000 &
+b10000000 5
+b1111111 ,
+b1111111 3
+1#
+b10000000 +
+b10000000 1
+b101 /
+b1111111 ;
+b10000000 :
+#5000

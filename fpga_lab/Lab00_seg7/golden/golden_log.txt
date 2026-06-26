@@ -1,5 +1,0 @@
-##SEC_STUDENT_CAN_SEE
-[CASE 1-10] checks decimal digit encodings
-[CASE 11] checks one default-code input
-[PASS] seg7_dec
-##END_STUDENT_CAN_SEE

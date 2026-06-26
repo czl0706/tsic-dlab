@@ -1,0 +1,195 @@
+{
+    "extensionVersion":  "1.5.2",
+    "fileName":  "wave.vcd",
+    "markerTime":  null,
+    "altMarkerTime":  null,
+    "displayTimeUnit":  "ps",
+    "selectedSignal":  null,
+    "zoomRatio":  0.009887925706936581,
+    "scrollLeft":  0,
+    "displayedSignals":  [
+                             {
+                                 "dataType":  "signal-group",
+                                 "groupName":  "hello",
+                                 "collapseState":  2,
+                                 "children":  [
+                                                  {
+                                                      "dataType":  "netlist-variable",
+                                                      "netlistId":  14,
+                                                      "name":  "tb_ex06_advanced_seq.u_hello.MSG_LEN",
+                                                      "numberFormat":  "hexadecimal",
+                                                      "colorIndex":  2,
+                                                      "rowHeight":  1,
+                                                      "verticalScale":  1,
+                                                      "nameType":  "fullPath",
+                                                      "customName":  "MSG_LEN",
+                                                      "renderType":  "multiBit",
+                                                      "valueLinkCommand":  ""
+                                                  },
+                                                  {
+                                                      "dataType":  "netlist-variable",
+                                                      "netlistId":  12,
+                                                      "name":  "tb_ex06_advanced_seq.u_hello.clk",
+                                                      "numberFormat":  "binary",
+                                                      "colorIndex":  0,
+                                                      "rowHeight":  1,
+                                                      "verticalScale":  1,
+                                                      "nameType":  "fullPath",
+                                                      "customName":  "clk",
+                                                      "renderType":  "binary",
+                                                      "valueLinkCommand":  ""
+                                                  },
+                                                  {
+                                                      "dataType":  "netlist-variable",
+                                                      "netlistId":  13,
+                                                      "name":  "tb_ex06_advanced_seq.u_hello.rst_n",
+                                                      "numberFormat":  "binary",
+                                                      "colorIndex":  0,
+                                                      "rowHeight":  1,
+                                                      "verticalScale":  1,
+                                                      "nameType":  "fullPath",
+                                                      "customName":  "rst_n",
+                                                      "renderType":  "binary",
+                                                      "valueLinkCommand":  ""
+                                                  },
+                                                  {
+                                                      "dataType":  "netlist-variable",
+                                                      "netlistId":  15,
+                                                      "name":  "tb_ex06_advanced_seq.u_hello.char",
+                                                      "numberFormat":  "ascii",
+                                                      "colorIndex":  0,
+                                                      "rowHeight":  1,
+                                                      "verticalScale":  1,
+                                                      "nameType":  "fullPath",
+                                                      "customName":  "char",
+                                                      "renderType":  "multiBit",
+                                                      "valueLinkCommand":  ""
+                                                  },
+                                                  {
+                                                      "dataType":  "netlist-variable",
+                                                      "netlistId":  16,
+                                                      "name":  "tb_ex06_advanced_seq.u_hello.index",
+                                                      "numberFormat":  "hexadecimal",
+                                                      "colorIndex":  0,
+                                                      "rowHeight":  1,
+                                                      "verticalScale":  1,
+                                                      "nameType":  "fullPath",
+                                                      "customName":  "index",
+                                                      "renderType":  "multiBit",
+                                                      "valueLinkCommand":  ""
+                                                  }
+                                              ]
+                             },
+                             {
+                                 "dataType":  "signal-group",
+                                 "groupName":  "vending_machine",
+                                 "collapseState":  2,
+                                 "children":  [
+                                                  {
+                                                      "dataType":  "netlist-variable",
+                                                      "netlistId":  17,
+                                                      "name":  "tb_ex06_advanced_seq.u_vending.clk",
+                                                      "numberFormat":  "binary",
+                                                      "colorIndex":  0,
+                                                      "rowHeight":  1,
+                                                      "verticalScale":  1,
+                                                      "nameType":  "fullPath",
+                                                      "customName":  "clk",
+                                                      "renderType":  "binary",
+                                                      "valueLinkCommand":  ""
+                                                  },
+                                                  {
+                                                      "dataType":  "netlist-variable",
+                                                      "netlistId":  20,
+                                                      "name":  "tb_ex06_advanced_seq.u_vending.rst_n",
+                                                      "numberFormat":  "binary",
+                                                      "colorIndex":  0,
+                                                      "rowHeight":  1,
+                                                      "verticalScale":  1,
+                                                      "nameType":  "fullPath",
+                                                      "customName":  "rst_n",
+                                                      "renderType":  "binary",
+                                                      "valueLinkCommand":  ""
+                                                  },
+                                                  {
+                                                      "dataType":  "netlist-variable",
+                                                      "netlistId":  26,
+                                                      "name":  "tb_ex06_advanced_seq.u_vending.amount",
+                                                      "numberFormat":  "hexadecimal",
+                                                      "colorIndex":  0,
+                                                      "rowHeight":  1,
+                                                      "verticalScale":  1,
+                                                      "nameType":  "fullPath",
+                                                      "customName":  "amount",
+                                                      "renderType":  "multiBit",
+                                                      "valueLinkCommand":  ""
+                                                  },
+                                                  {
+                                                      "dataType":  "netlist-variable",
+                                                      "netlistId":  18,
+                                                      "name":  "tb_ex06_advanced_seq.u_vending.coin_10",
+                                                      "numberFormat":  "binary",
+                                                      "colorIndex":  0,
+                                                      "rowHeight":  1,
+                                                      "verticalScale":  1,
+                                                      "nameType":  "fullPath",
+                                                      "customName":  "coin_10",
+                                                      "renderType":  "binary",
+                                                      "valueLinkCommand":  ""
+                                                  },
+                                                  {
+                                                      "dataType":  "netlist-variable",
+                                                      "netlistId":  19,
+                                                      "name":  "tb_ex06_advanced_seq.u_vending.coin_5",
+                                                      "numberFormat":  "binary",
+                                                      "colorIndex":  0,
+                                                      "rowHeight":  1,
+                                                      "verticalScale":  1,
+                                                      "nameType":  "fullPath",
+                                                      "customName":  "coin_5",
+                                                      "renderType":  "binary",
+                                                      "valueLinkCommand":  ""
+                                                  },
+                                                  {
+                                                      "dataType":  "netlist-variable",
+                                                      "netlistId":  24,
+                                                      "name":  "tb_ex06_advanced_seq.u_vending.S",
+                                                      "numberFormat":  "hexadecimal",
+                                                      "colorIndex":  0,
+                                                      "rowHeight":  1,
+                                                      "verticalScale":  1,
+                                                      "nameType":  "fullPath",
+                                                      "customName":  "S",
+                                                      "renderType":  "multiBit",
+                                                      "valueLinkCommand":  ""
+                                                  },
+                                                  {
+                                                      "dataType":  "netlist-variable",
+                                                      "netlistId":  28,
+                                                      "name":  "tb_ex06_advanced_seq.u_vending.change_5",
+                                                      "numberFormat":  "binary",
+                                                      "colorIndex":  0,
+                                                      "rowHeight":  1,
+                                                      "verticalScale":  1,
+                                                      "nameType":  "fullPath",
+                                                      "customName":  "change_5",
+                                                      "renderType":  "binary",
+                                                      "valueLinkCommand":  ""
+                                                  },
+                                                  {
+                                                      "dataType":  "netlist-variable",
+                                                      "netlistId":  30,
+                                                      "name":  "tb_ex06_advanced_seq.u_vending.vend",
+                                                      "numberFormat":  "binary",
+                                                      "colorIndex":  0,
+                                                      "rowHeight":  1,
+                                                      "verticalScale":  1,
+                                                      "nameType":  "fullPath",
+                                                      "customName":  "vend",
+                                                      "renderType":  "binary",
+                                                      "valueLinkCommand":  ""
+                                                  }
+                                              ]
+                             }
+                         ]
+}

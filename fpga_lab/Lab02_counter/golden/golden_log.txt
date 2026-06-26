@@ -1,0 +1,10 @@
+##SEC_STUDENT_CAN_SEE
+[CASE 1] checks reset release
+[CASE 2-10] checks count-up sequence
+[CASE 11] checks rollover
+[CASE 12] checks clear
+[CASE 13] checks hold when disabled
+[CASE 14] checks hold when up is low
+[CASE 15-20] checks parameterized MAX_COUNT=5 rollover
+[PASS] counter
+##END_STUDENT_CAN_SEE
