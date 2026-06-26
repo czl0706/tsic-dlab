@@ -14,8 +14,8 @@ module pixel_addr_calc (
     output [7:0] sprite_addr
 );
 
-parameter SCREEN_W = 640;
-parameter TILES_X  = 40;
+localparam SCREEN_W = 640;
+localparam TILES_X  = 40;
 
 // pixel_index = y * 640 + x
 assign pixel_index = ...;
