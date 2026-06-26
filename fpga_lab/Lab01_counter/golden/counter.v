@@ -6,7 +6,7 @@ module counter #(
     input  wire       rst,
     input  wire       clr,
     input  wire       en,
-    input  wire       up,         // 1: count up, 0: hold
+    input  wire       up,         // 1: count up, 0: count down
     output reg  [COUNT_WIDTH-1:0] count
 );
 
@@ -16,9 +16,10 @@ always @(posedge clk or posedge rst) begin
     end else if (clr) begin
         count <= 0;
     end else if (en) begin
-        // When up is high, count up, and roll over to 0 after MAX_COUNT.
-        if (...) begin
-            ...
+        if (up) begin
+            count <= (count == MAX_COUNT) ? 0 : (count + 1);
+        end else begin
+            count <= (count == 0) ? MAX_COUNT : (count - 1);
         end
     end
 end

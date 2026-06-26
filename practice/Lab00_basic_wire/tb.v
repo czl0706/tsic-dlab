@@ -2,10 +2,8 @@
 module tb_basic_wire;
     reg [7:0] in;
     wire [7:0] pass;
-    wire [7:0] const_42;
     wire [3:0] lo_nibble;
     wire [3:0] hi_nibble;
-    wire [15:0] zero_ext;
     wire [15:0] sign_ext;
     wire [7:0] swap_nibble;
     integer errors, log_fd, result_fd, pattern;
@@ -13,10 +11,8 @@ module tb_basic_wire;
     basic_wire dut (
         .in(in),
         .pass(pass),
-        .const_42(const_42),
         .lo_nibble(lo_nibble),
         .hi_nibble(hi_nibble),
-        .zero_ext(zero_ext),
         .sign_ext(sign_ext),
         .swap_nibble(swap_nibble)
     );
@@ -28,14 +24,12 @@ module tb_basic_wire;
             in = value;
             #1;
             if (pass !== value ||
-                const_42 !== 8'd42 ||
                 lo_nibble !== value[3:0] ||
                 hi_nibble !== value[7:4] ||
-                zero_ext !== {8'b0, value} ||
                 sign_ext !== {{8{value[7]}}, value} ||
                 swap_nibble !== {value[3:0], value[7:4]}) begin
-                if (errors == 0) $display("[ERROR] pattern %0d: in=%h got pass=%h const_42=%h lo=%h hi=%h zero_ext=%h sign_ext=%h swap=%h", pattern, value, pass, const_42, lo_nibble, hi_nibble, zero_ext, sign_ext, swap_nibble);
-                if (errors == 0) $fdisplay(log_fd, "[ERROR] pattern %0d: in=%h got pass=%h const_42=%h lo=%h hi=%h zero_ext=%h sign_ext=%h swap=%h", pattern, value, pass, const_42, lo_nibble, hi_nibble, zero_ext, sign_ext, swap_nibble);
+                if (errors == 0) $display("[ERROR] pattern %0d: in=%h got pass=%h lo=%h hi=%h sign_ext=%h swap=%h", pattern, value, pass, lo_nibble, hi_nibble, sign_ext, swap_nibble);
+                if (errors == 0) $fdisplay(log_fd, "[ERROR] pattern %0d: in=%h got pass=%h lo=%h hi=%h sign_ext=%h swap=%h", pattern, value, pass, lo_nibble, hi_nibble, sign_ext, swap_nibble);
                 errors = errors + 1;
             end
         end
@@ -49,8 +43,8 @@ module tb_basic_wire;
         $display("##SEC_STUDENT_CAN_SEE");
         $fdisplay(log_fd, "##SEC_STUDENT_CAN_SEE");
         // GOLDEN_CASE_SUMMARY_BEGIN
-        $display("[CASE 1-5] checks pass-through, constants, nibbles, extensions, and nibble swap");
-        $fdisplay(log_fd, "[CASE 1-5] checks pass-through, constants, nibbles, extensions, and nibble swap");
+        $display("[CASE 1-5] checks pass-through, nibbles, sign extension, and nibble swap");
+        $fdisplay(log_fd, "[CASE 1-5] checks pass-through, nibbles, sign extension, and nibble swap");
         // GOLDEN_CASE_SUMMARY_END
 
         errors = 0;

@@ -52,10 +52,10 @@ module tb_counter;
         $fdisplay(log_fd,"[CASE 12] checks clear");
         $display("[CASE 13] checks hold when disabled");
         $fdisplay(log_fd,"[CASE 13] checks hold when disabled");
-        $display("[CASE 14] checks hold when up is low");
-        $fdisplay(log_fd,"[CASE 14] checks hold when up is low");
-        $display("[CASE 15-20] checks parameterized MAX_COUNT=5 rollover");
-        $fdisplay(log_fd,"[CASE 15-20] checks parameterized MAX_COUNT=5 rollover");
+        $display("[CASE 14-16] checks count-down and underflow wrap");
+        $fdisplay(log_fd,"[CASE 14-16] checks count-down and underflow wrap");
+        $display("[CASE 17-22] checks parameterized MAX_COUNT=5 rollover");
+        $fdisplay(log_fd,"[CASE 17-22] checks parameterized MAX_COUNT=5 rollover");
         // GOLDEN_CASE_SUMMARY_END
 
 
@@ -66,7 +66,9 @@ module tb_counter;
         @(posedge clk); check_count("rollover 9 to 0", 4'd0);
         @(negedge clk); clr=1; @(posedge clk); check_count("clear", 4'd0);
         @(negedge clk); clr=0; en=0; @(posedge clk); check_count("hold when en=0", 4'd0);
-        @(negedge clk); en=1; up=0; @(posedge clk); check_count("hold when up=0", 4'd0);
+        @(negedge clk); en=1; up=0; @(posedge clk); check_count("down wrap 0 to 9", 4'd9);
+        @(posedge clk); check_count("count down", 4'd8);
+        @(posedge clk); check_count("count down", 4'd7);
 
         @(negedge clk); rst=1; clr=0; en=0; up=1;
         @(posedge clk); @(negedge clk); rst=0; en=1;

@@ -1,0 +1,1 @@
+Implement a parameterized up/down counter with enable, clear, and wraparound behavior. When `up` is 1, count from 0 to MAX_COUNT and wrap to 0. When `up` is 0, count down and wrap from 0 to MAX_COUNT.
