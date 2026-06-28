@@ -1,5 +1,6 @@
-# # Ignore simulation generated files
-# **/sim/*
+# Ignore generated simulation files outside tutorial examples.
+**/sim/*
+!tutorial/**/sim/*
 
 # Keep sim folders in git
 !**/sim/.gitkeep
