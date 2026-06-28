@@ -62,6 +62,12 @@ module tb_ex06_advanced_seq;
         @(posedge clk); check_hello("l", 8'h6c);
         @(posedge clk); check_hello("l", 8'h6c);
         @(posedge clk); check_hello("o", 8'h6f);
+        @(posedge clk); check_hello("space", 8'h20);
+        @(posedge clk); check_hello("W", 8'h57);
+        @(posedge clk); check_hello("o", 8'h6f);
+        @(posedge clk); check_hello("r", 8'h72);
+        @(posedge clk); check_hello("l", 8'h6c);
+        @(posedge clk); check_hello("d", 8'h64);
 
         set_coins(1'b1, 1'b0); @(posedge clk); check_vending("insert 5", 1'b0, 1'b0, 4'd5);
         set_coins(1'b0, 1'b1); @(posedge clk); check_vending("5 plus 10 vend", 1'b1, 1'b0, 4'd0);

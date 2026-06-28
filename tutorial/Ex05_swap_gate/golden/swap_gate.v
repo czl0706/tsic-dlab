@@ -38,18 +38,7 @@ module cmp2_gate (
     output       gt
 );
 
-wire not_b1;
-wire not_b0;
-wire a1_gt_b1;
-wire a1_xnor_b1;
-wire a0_gt_b0_when_equal_msb;
-
-not g0 (not_b1, b[1]);
-not g1 (not_b0, b[0]);
-and g2 (a1_gt_b1, a[1], not_b1);
-xnor g3 (a1_xnor_b1, a[1], b[1]);
-and g4 (a0_gt_b0_when_equal_msb, a1_xnor_b1, a[0], not_b0);
-or  g5 (gt, a1_gt_b1, a0_gt_b0_when_equal_msb);
+assign gt = (a > b);
 
 endmodule
 
