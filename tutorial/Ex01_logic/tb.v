@@ -3,7 +3,8 @@ module tb_ex01_logic;
     reg a, b;
     reg [3:0] in_v1, in_v2, in_v3;
     wire not_a, o_and, o_or, o_xor, o_nand;
-    wire [3:0] inv_v1, o_and_v, o_or_v, o_not_v3, o_reduced_and, o_reduced_or;
+    wire [3:0] inv_v1, o_and_v, o_or_v, o_not_v3;
+    wire       o_reduced_and, o_reduced_or;
     integer errors, log_fd, result_fd, pattern;
 
     Ex01_logic dut(

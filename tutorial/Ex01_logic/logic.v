@@ -7,16 +7,16 @@ module Ex01_logic (
     output reg o_xor,  // = a xor b
     output reg o_nand, // = not (a and b)
 
-    input [3:0] in_v1,
-    input [3:0] in_v2,
+    input      [3:0] in_v1,
+    input      [3:0] in_v2,
     output reg [3:0] inv_v1, // = not in_v1
     output reg [3:0] o_and_v, // = in_v1 and in_v2
     output reg [3:0] o_or_v,   // = in_v1 or in_v2
 
-    input [3:0] in_v3,
+    input      [3:0] in_v3,
     output reg [3:0] o_not_v3,
-    output reg [3:0] o_reduced_and, // = and of all bits in in_v3
-    output reg [3:0] o_reduced_or   // = or of all bits
+    output reg       o_reduced_and, // = and of all bits in in_v3
+    output reg       o_reduced_or   // = or of all bits
 );
 
 // ** logical operations **

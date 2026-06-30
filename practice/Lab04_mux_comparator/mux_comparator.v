@@ -5,8 +5,7 @@ module mux_comparator (
     input            sel,
     output     [7:0] mux_out,
 
-    output     [7:0] larger,
-    output     [7:0] smaller
+    output     [7:0] abs_diff
 );
 
 wire a_gt_b;
@@ -14,9 +13,8 @@ wire a_gt_b;
 // Output b if sel is 1, otherwise output a.
 assign mux_out = sel ? b : a;
 
-// Output larger and smaller values between a and b.
+// Output the absolute difference between a and b.
 assign a_gt_b  = (a > b);
-assign larger  = ...; // To be completed
-assign smaller = ...; // To be completed  
+assign abs_diff = ...; // To be completed
 
 endmodule

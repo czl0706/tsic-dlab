@@ -1,5 +1,5 @@
 $date
-	Mon May 11 16:36:20 2026
+	Mon Jun 29 10:31:27 2026
 $end
 $version
 	Icarus Verilog
@@ -9,8 +9,8 @@ $timescale
 $end
 $scope module tb_ex01_logic $end
 $var wire 1 ! o_xor $end
-$var wire 4 " o_reduced_or [3:0] $end
-$var wire 4 # o_reduced_and [3:0] $end
+$var wire 1 " o_reduced_or $end
+$var wire 1 # o_reduced_and $end
 $var wire 4 $ o_or_v [3:0] $end
 $var wire 1 % o_or $end
 $var wire 4 & o_not_v3 [3:0] $end
@@ -42,16 +42,16 @@ $var reg 1 ' o_nand $end
 $var reg 4 : o_not_v3 [3:0] $end
 $var reg 1 % o_or $end
 $var reg 4 ; o_or_v [3:0] $end
-$var reg 4 < o_reduced_and [3:0] $end
-$var reg 4 = o_reduced_or [3:0] $end
+$var reg 1 # o_reduced_and $end
+$var reg 1 " o_reduced_or $end
 $var reg 1 ! o_xor $end
 $upscope $end
 $scope task check $end
-$var reg 1 > ia $end
-$var reg 1 ? ib $end
-$var reg 4 @ v1 [3:0] $end
-$var reg 4 A v2 [3:0] $end
-$var reg 4 B v3 [3:0] $end
+$var reg 1 < ia $end
+$var reg 1 = ib $end
+$var reg 4 > v1 [3:0] $end
+$var reg 4 ? v2 [3:0] $end
+$var reg 4 @ v3 [3:0] $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
@@ -60,13 +60,11 @@ $dumpall
 $end
 #0
 $dumpvars
-b0 B
-b1111 A
 b0 @
-0?
-0>
-b0 =
-b0 <
+b1111 ?
+b0 >
+0=
+0<
 b1111 ;
 b1111 :
 b0 9
@@ -91,15 +89,13 @@ b0 (
 b1111 &
 0%
 b1111 $
-b0 #
-b0 "
+0#
+0"
 0!
 $end
 #1000
-b1 "
-b1 =
-b1 #
-b1 <
+1"
+1#
 b0 &
 b0 :
 b1110 $
@@ -118,13 +114,12 @@ b1010 .
 b1010 5
 1-
 b10 3
-b1111 B
-b1100 A
-b1010 @
-1?
+b1111 @
+b1100 ?
+b1010 >
+1=
 #2000
-b0 #
-b0 <
+0#
 b111 &
 b111 :
 b111 $
@@ -143,11 +138,11 @@ b101 5
 0-
 1,
 b11 3
-b1000 B
-b11 A
-b101 @
-0?
-1>
+b1000 @
+b11 ?
+b101 >
+0=
+1<
 #3000
 b1001 &
 b1001 :
@@ -168,8 +163,8 @@ b1111 .
 b1111 5
 1-
 b100 3
-b110 B
-b0 A
-b1111 @
-1?
+b110 @
+b0 ?
+b1111 >
+1=
 #4000
