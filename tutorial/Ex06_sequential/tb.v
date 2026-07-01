@@ -4,14 +4,14 @@ module tb_ex05_sequential;
     reg en, clear, d, serial_in;
     wire [3:0] cnt;
     wire rollover;
-    wire dff_q, dff_q_b;
+    wire dff_q;
     wire serial_out;
     wire [7:0] shift_data;
     integer errors, log_fd, result_fd, pattern, i;
     reg [7:0] expected_shift;
 
     Ex06_Counter u_counter(.clk(clk), .rst_n(rst_n), .en(en), .clear(clear), .cnt(cnt), .rollover(rollover));
-    Ex06_DFF u_dff(.clk(clk), .rst_n(rst_n), .d(d), .q(dff_q), .q_b(dff_q_b));
+    Ex06_DFF u_dff(.clk(clk), .rst_n(rst_n), .d(d), .q(dff_q));
     Ex06_ShiftRegister u_shift(.clk(clk), .rst_n(rst_n), .en(en), .serial_in(serial_in), .serial_out(serial_out), .data(shift_data));
 
     initial begin clk = 0; forever #5 clk = ~clk; end

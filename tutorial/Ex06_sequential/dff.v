@@ -2,8 +2,7 @@ module Ex06_DFF (
     input      clk,
     input      rst_n,
     input      d,
-    output reg q,
-    output     q_b
+    output reg q
 );
 
 // ** D flip-flop **
@@ -15,7 +14,5 @@ always @(posedge clk or negedge rst_n) begin
         q <= d;
     end
 end
-
-assign q_b = ~q;
 
 endmodule

@@ -53,6 +53,9 @@ module tb_ex06_advanced_seq;
     initial begin
         log_fd=$fopen("sim/log.txt","w"); result_fd=$fopen("sim/result.txt","w");
         $dumpfile("sim/wave.vcd"); $dumpvars(0,tb_ex06_advanced_seq);
+        for (pattern = 0; pattern < 14; pattern = pattern + 1) begin
+            $dumpvars(0, u_hello.message[pattern]);
+        end
         $display("##SEC_STUDENT_CAN_SEE"); $fdisplay(log_fd,"##SEC_STUDENT_CAN_SEE");
         errors=0; pattern=0; rst_n=0; coin_5=0; coin_10=0;
         repeat(2) @(posedge clk); @(negedge clk); rst_n=1;
